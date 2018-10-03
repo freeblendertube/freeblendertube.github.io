@@ -1,0 +1,21 @@
+---
+title: Pics and visuals - sizeoverload
+layout: allposts
+---
+{% assign my_array = "" | split: ', ' %}
+{% for post in site.categories['blog'] %}
+    {% assign my_array = my_array | push: post.video_creator %}
+{% endfor %}
+{% assign my_array = my_array | uniq | sort_natural %}
+
+<h3>Welcome our creators:</h3>
+<ul class="creators-list">
+{% for i in my_array %}
+    {% capture creator %}{{i}}{% endcapture %}
+    {% assign creators_page = creator | remove: " " | remove: "'" | remove: "." | downcase %}
+    <li class="{{creators_page}} creator-style font-{{forloop.index}}"><span><a href="{{creators_page}}/">{{creator}}</a></span></li>
+{% endfor %}
+</ul>
+
+<!-- {% assign my_array_ordered = my_array | uniq | sort %}
+{{ my_array_ordered }} -->

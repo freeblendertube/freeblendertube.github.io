@@ -1,0 +1,10 @@
+---
+layout: page
+title: Cookies
+---
+{% for cookie in site.timelapse %}
+	<div class="cookie">
+		<h2>{{ cookie.video_title }}</h2>
+		{{ cookie.content }}
+	</div>
+{% endfor %}
