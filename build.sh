@@ -12,10 +12,10 @@ if [[ -z "$1" ]]; then
   exit
 fi
 
-git checkout source && \
+git checkout sources && \
   git add . && \
   git commit -am "$1" && \
-  git push origin source && \
+  git push origin sources && \
   echo "Source successfully pushed to GitHub."
   bundle exec jekyll build && \
   touch _site/.nojekyll && \
