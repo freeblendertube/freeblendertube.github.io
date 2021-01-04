@@ -1,0 +1,56 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// scss variables in here for now... as long as these are in a scss file that is called early by @imports, scss should compile properly
+$blender-orange1: #e4770c;
+$blender-orange2: #ee9131;
+$blender-orange3: #eba45f;
+
+$human-skin: rgba(233, 202, 156, 1);
+$mango-tango: rgba(255, 140, 66, 1);
+$coral-red: rgba(255, 60, 56, 1);
+
+$smokey-topaz-stroke: rgba(85, 42, 43, 1);
+$smokey-topaz-platform: rgba(162, 62, 72, .8);
+$smokey-topaz: rgba(162, 62, 72, 1);
+
+$shadow-blue-platform: rgba(108, 142, 173, .8);
+$shadow-blue: rgba(108, 142, 173, 1);
+
+//SAM
+$bg_lines_tone: #e3e0df;
+
+$spacing-unit:     30px;
+
+$text-color:       #2C3539;
+$background-color: #eff3f3;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// set yt-blog-item variable 1, 2, 3, and 4
+$yt-blog-item: 1;
+
+@charset "utf-8";
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "fonts",
+        "base",
+        "samstyle",
+        "rainbowstyle";

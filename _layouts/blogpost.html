@@ -1,0 +1,47 @@
+{% include head.html %}
+{% include body.html %}
+
+<div class="flexContainer">
+
+    {% assign creator = page.video_creator | remove: " " | downcase %}
+
+    {% capture thumb_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{page.video_id | append: "-thumb.jpg"}}{% endcapture %}
+    {% capture preview_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{page.video_id | append: "-preview.jpg"}}{% endcapture %}
+    <div class="blogItem"> <!-- eventually use <a style="display:block"> -->
+        <div class="item-header">
+            <span class="title-style"><a href="{{page.url}}">{{page.video_title}}</a></span>
+            <span class="date-style">{{ page.date | date: "%b " }}{{ page.date | date: "%-d" }}{{ page.date | date: ", %Y" }}</span>
+        </div>
+        <div class="yt-item">
+            <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
+            <table class="yt-table">
+                <tr class="yt-row">
+                    <td class="yt-cell"><i>by</i> <div class="video-creator"><span>{{page.video_creator}}</span></div></td>
+
+                    <td class="yt-cell-thumb">
+                        <a href={{page.video_url}} rel="noopener noreferrer" target="_blank">
+                            <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="{{preview_file}}"></div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        {% if page.custom_sub == 'ps-scripts' %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+        {%endif%}
+
+        <p class="post-meta"></p>
+
+    </div>
+</div>
+    <div id="hyvor-talk-view"></div>
+    <script type="text/javascript">
+        var HYVOR_TALK_WEBSITE = 2727; // DO NOT CHANGE THIS
+        var HYVOR_TALK_CONFIG = {
+            url: '{{ page.url | absolute_url }}',
+            id: '{{page.id}}'
+        };
+    </script>
+    <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+
+{% include footer.html %}

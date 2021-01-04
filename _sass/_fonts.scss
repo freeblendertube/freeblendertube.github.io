@@ -1,0 +1,371 @@
+// IMPORTANT
+
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$header-font: 'Roboto Slab', serif;
+$title-font-family: 'Gloria Hallelujah';
+$title-secondary-font-family: 'Squada One', sans-serif;
+// $title-secondary-font-family: 'Acme', sans-serif;
+$title-font-size: 50px;
+
+$font_family_consolas: "Consolas", "Monaco", "Courier New", "Courier", monospace;
+$base-font-family: 'Source Sans Pro', sans-serif;
+
+
+// feuen
+@font-face {
+    font-family: feuen;
+    src: url("fonts/feuen.ttf");
+}
+$feuen: 'feuen';
+
+// feueon
+@font-face {
+    font-family: feueon;
+    src: url("fonts/feueon.ttf");
+}
+$feueon: 'feueon';
+
+// techover
+@font-face {
+    font-family: techover;
+    src: url("fonts/techover.ttf");
+}
+$techover: 'techover';
+
+// Chromia
+@font-face {
+    font-family: Chromia;
+    src: url("fonts/Chromia.otf") format("opentype");
+}
+$chromia: 'Chromia';
+
+@font-face {
+    font-family: Chromia Italic;
+    src: url("fonts/Chromia Italic.otf") format("opentype");
+}
+$chromia_italic: 'Chromia Italic';
+
+@font-face {
+    font-family: Chromia Bold;
+    src: url("fonts/Chromia Bold.otf") format("opentype");
+}
+$chromia_bold: 'Chromia Bold';
+
+@font-face {
+    font-family: Chromia Bold Italic;
+    src: url("fonts/Chromia Bold Italic.otf") format("opentype");
+}
+$chromia_bold_italic: 'Chromia Bold Italic';
+
+@font-face {
+    font-family: Chromia Condensed;
+    src: url("fonts/Chromia Condensed.otf") format("opentype");
+}
+$chromia_condensed: 'Chromia Condensed';
+
+@font-face {
+    font-family: Chromia Condensed Italic;
+    src: url("fonts/Chromia Condensed Italic.otf") format("opentype");
+}
+$chromia_condensed_italic: 'Chromia Condensed Italic';
+
+@font-face {
+    font-family: Chromia Condensed Bold;
+    src: url("fonts/Chromia Condensed Bold.otf") format("opentype");
+}
+$chromia_condensed_bold: 'Chromia Condensed Bold';
+
+@font-face {
+    font-family: Chromia Condensed Bold Italic;
+    src: url("fonts/Chromia Condensed Bold Italic.otf") format("opentype");
+}
+$chromia_condensed_bold_italic: 'Chromia Condensed Bold Italic';
+
+@font-face {
+    font-family: Chromia Supercap;
+    src: url("fonts/Chromia Supercap.otf") format("opentype");
+}
+$chromia_supercap: 'Chromia Supercap';
+
+@font-face {
+    font-family: Chromia Supercap Italic;
+    src: url("fonts/Chromia Supercap Italic.otf") format("opentype");
+}
+$chromia_supercap_italic: 'Chromia Supercap Italic';
+
+@font-face {
+    font-family: Chromia Supercap Bold;
+    src: url("fonts/Chromia Supercap Bold.otf") format("opentype");
+}
+$chromia_supercap_bold: 'Chromia Supercap Bold';
+
+@font-face {
+    font-family: Chromia Supercap Bold Italic;
+    src: url("fonts/Chromia Supercap Bold Italic.otf") format("opentype");
+}
+$chromia_supercap_bold_italic: 'Chromia Supercap Bold Italic';
+
+@font-face {
+    font-family: Chromia Supercap Condensed;
+    src: url("fonts/Chromia Supercap Condensed.otf") format("opentype");
+}
+$chromia_supercap_condensed: 'Chromia Supercap Condensed';
+
+@font-face {
+    font-family: Chromia Supercap Condensed Italic;
+    src: url("fonts/Chromia Supercap Condensed Italic.otf") format("opentype");
+}
+$chromia_supercap_condensed_italic: 'Chromia Supercap Condensed Italic';
+
+@font-face {
+    font-family: Chromia Supercap Condensed Bold;
+    src: url("fonts/Chromia Supercap Condensed Bold.otf") format("opentype");
+}
+$chromia_supercap_condensed_bold: 'Chromia Supercap Condensed Bold';
+
+@font-face {
+    font-family: Chromia Supercap Condensed Bold Italic;
+    src: url("Chromia Supercap Condensed Bold Italic.otf") format("opentype");
+}
+$chromia_supercap_condensed_bold_italic: 'Chromia Supercap Condensed Bold Italic';
+
+// Alpaca Scarlett Demo
+@font-face {
+    font-family: Alpaca Scarlett Demo;
+    src: url("fonts/Alpaca Scarlett Demo.otf") format("opentype");
+}
+$alpaca_scarlett_demo: 'Alpaca Scarlett Demo';
+
+// Anita Semi Square
+@font-face {
+    font-family: Anita Semi Square;
+    src: url("fonts/Anita Semi Square.ttf");
+}
+$anita_semi_square: 'Anita Semi Square';
+
+// Assassins
+@font-face {
+    font-family: Assassins;
+    src: url("Assassins.ttf");
+}
+$assassins: 'Assassins';
+
+// batmfa
+@font-face {
+    font-family: batmfa;
+    src: url("fonts/batmfa.ttf");
+}
+$batmfa: 'batmfa';
+
+// batmfo
+@font-face {
+    font-family: batmfo;
+    src: url("fonts/batmfo.ttf");
+}
+$batmfa: 'batmfo';
+
+// fifa
+@font-face {
+    font-family: fifa;
+    src: url("fonts/fifa.ttf");
+}
+$fifa: 'fifa';
+
+// Happy Time
+@font-face {
+    font-family: Happy Time;
+    src: url("fonts/Happy Time.otf") format("opentype");
+}
+$happy_time: 'Happy Time';
+
+// Happy Time
+@font-face {
+    font-family: Happy Time;
+    src: url("fonts/Happy Time.otf") format("opentype");
+}
+$happy_time: 'Happy Time';
+
+// HappyTime
+@font-face {
+    font-family: HappyTime;
+    src: url("fonts/HappyTime.otf") format("opentype");
+}
+$happy_time: 'HappyTime';
+
+// HappyTimeTwo
+@font-face {
+    font-family: HappyTimeTwo;
+    src: url("fonts/HappyTimeTwo.otf") format("opentype");
+}
+$happy_time_two: 'HappyTimeTwo';
+
+// HappyTimeThree
+@font-face {
+    font-family: HappyTimeThree;
+    src: url("fonts/HappyTimeThree.otf") format("opentype");
+}
+$happy_time_three: 'HappyTimeThree';
+
+// CaviarDreams
+@font-face {
+    font-family: CaviarDreams;
+    src: url("fonts/CaviarDreams.ttf");
+}
+$caviar_dreams: 'CaviarDreams';
+
+// CaviarDreams_Bold
+@font-face {
+    font-family: CaviarDreams_Bold;
+    src: url("fonts/CaviarDreams_Bold.ttf");
+}
+$caviar_dreams_bold: 'CaviarDreams_Bold';
+
+// CaviarDreams_Italic
+@font-face {
+    font-family: CaviarDreams_Italic;
+    src: url("fonts/CaviarDreams_Italic.ttf");
+}
+$caviar_dreams_italic: 'CaviarDreams_Italic';
+
+// CaviarDreams_BoldItalic
+@font-face {
+    font-family: CaviarDreams_BoldItalic;
+    src: url("fonts/CaviarDreams_BoldItalic.ttf");
+}
+$caviar_dreams_bold_italic: 'CaviarDreams_BoldItalic';
+
+// google fonts
+
+//fonts.googleapis.com/css?family=Roboto+Condensed|Slabo+27px|Bungee|Squada+One|Gloria+Hallelujah|Lato|Lobster|Aref+Ruqaa|Montserrat|Patua+One|Ropa+Sans|Roboto+Slab|Acme|Rubik|Open+Sans|Oswald|Oxygen|Merriweather|Raleway
+
+//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i
+
+// Raleway
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900i');
+$raleway: 'Raleway', sans-serif;
+
+// Merriweather
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i');
+$merriweather: 'Merriweather', serif;
+
+// Oxygen
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+$oxygen: 'Oxygen', sans-serif;
+
+// Oswald
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+$oswald: 'Oswald', sans-serif;
+
+// Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i');
+$open_sans: 'Open Sans', sans-serif;
+
+// Rubik
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i');
+$rubik: 'Rubik', sans-serif;
+
+// Acme
+@import url('https://fonts.googleapis.com/css?family=Acme');
+$acme: 'Acme', sans-serif;
+
+// Ropa Sans
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
+$ropa_sans: 'Ropa Sans', sans-serif;
+
+// Patua One
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+$patua_one: 'Patua One', cursive;
+
+// Montserrat
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i');
+$montserrat: 'Montserrat', sans-serif;
+
+// Aref Ruqaa
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+$aref_ruqaa: 'Aref Ruqaa', serif;
+
+// Lobster
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
+$lobster: 'Lobster', cursive;
+
+// Lato
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i');
+$lato: 'Lato', sans-serif;
+
+// Gloria Hallelujah
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+$gloria_halleluja: 'Gloria Hallelujah', cursive;
+
+// Squada One
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+$squada_one: 'Squada One', cursive;
+
+// Bungee
+@import url('https://fonts.googleapis.com/css?family=Bungee&subset=latin-ext');
+$bungee: 'Bungee', cursive;
+
+// Slabo 27px
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&subset=latin-ext');
+$slabo_27px: 'Slabo 27px', serif;
+
+// Roboto
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&subset=cyrillic,cyrillic-ext,latin-ext');
+$roboto: 'Roboto', sans-serif;
+
+// Roboto Condensed
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext');
+$roboto_condensed: 'Roboto Condensed', sans-serif;
+
+// Roboto Slab
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+$roboto_slab: 'Roboto Slab', serif;
+
+// Amarante
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+$amarante: 'Amarante', cursive;
+
+// Anaheim
+@import url('https://fonts.googleapis.com/css?family=Anaheim');
+
+// Baumans
+@import url('https://fonts.googleapis.com/css?family=Baumans');
+
+// Atma
+@import url('https://fonts.googleapis.com/css?family=Atma');
+
+// Fira Sans
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+// Exo 2
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+// Source Sans Pro
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext');
+
+$fonts_map: (
+    anaheim: "'Anaheim', sans-serif",
+    baumans: "'Baumans', cursive",
+    atma: "'Atma', cursive",
+    fira_sans: "'Fira Sans', sans-serif",
+    exo_2: "'Exo 2', sans-serif",
+    source_sans_pro: "'Source Sans Pro', sans-serif"
+);
+
+
+body {
+    //fonts!
+    // font-family: $chromia;
+
+    // font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    // color: $text-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
