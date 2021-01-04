@@ -74,6 +74,13 @@ VideoThumbnail.prototype.setOnMouseMoveListenerByDivElement = function (divElem,
 		var curPx = self.getImageNrByMousePosition(thumbnailMapWidth, thumbnailMapWidth / self.maxThumbnailNr, percentagePos);
 		var xPosition = self.getXPositionByDefaultThumbnailNr(curPx);
 		self.setDivBackgroundByPosX(this, xPosition);
+		var parentClass = divElem.className.split(' ')[1];
+		parentClass = ".yt-cell-thumb." + parentClass;
+		console.log(parentClass + ' > .time');
+		var time = $(parentClass + ' > .time')[0];
+		// var samtime = document.getElementsByClassName(parentClass).getElementsByClassName("time");
+		time.innerHTML = "cow";
+		// console.log(divElem.className.split(' ')[1]);
 	};
 };
 
@@ -96,8 +103,6 @@ VideoThumbnail.prototype.setDivBackgroundImage = function (divElem) {
         thumbnailMapWidth = imageWidth;
         self.setDivBackgroundByPosX(divElem, (thumbnailMapWidth - (defaultThumbnailNr * divElem.offsetWidth)));
     });
-
-
 };
 
 // MAIN
@@ -111,7 +116,7 @@ VideoThumbnail.prototype.displayThumbs = function () {
         var self = this;
         var divItem = this.thumbnailDivList[i];
         this.getThumbnailMapWidthByDivElement(divItem, defaultThumbnailNr, function(imageWidth, divElem, defaultThumbNr) {
-			console.log("gobochucki: " + divElem);
+			// console.log("gobochucki: " + divElem);
 
 			// SAMS RATIO
 			var newHeight = 240 * (180 / (imageWidth/100));
