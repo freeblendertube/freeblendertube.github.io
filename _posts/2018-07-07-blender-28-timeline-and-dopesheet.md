@@ -7,7 +7,7 @@ video_id: blender-28-timeline-and-dopesheet
 video_date: 2018-07-07
 video_creator: Jayanam
 channel_url: /channel/UCs5J4GVRB8s2P4hE-O0izrg
-video_url: https://www.youtube.com/watch?v=a1nUkPV4Akg
+video_url: https://youtu.be/a1nUkPV4Akg
 video_length: 0:04:47
 language_audio: English
 language_subs: x

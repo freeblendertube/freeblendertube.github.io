@@ -12,10 +12,13 @@
     });
 
     $('.yt-cell-thumb > a').on('click', function(e) {
+        // https://stackoverflow.com/questions/25234503/jquery-click-function-not-updating
+        // https://stackoverflow.com/questions/7261619/jquery-data-vs-attr
+
         // var divWithData = $(this).children("div:first");
         // console.log(divWithData.data('jumpto'));
-        alert($(this).data('original') + $(this).data('jumpto'));
-        e.originalEvent.currentTarget.href = $(this).data('original') + $(this).data('jumpto');
+
+        e.originalEvent.currentTarget.href = $(this).attr('data-original') + $(this).attr('data-jumpto');
         event.stopPropagation();
     });
 

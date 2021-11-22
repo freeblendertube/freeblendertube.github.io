@@ -7,7 +7,7 @@ video_id: creating-tileable-textures-with-help-of-photogrammetry
 video_date: 2014-10-18
 video_creator: loggie24
 channel_url: /channel/UCGksP7DVIrT7vGwTW7khB4g
-video_url: https://www.youtube.com/watch?v=uoDMab1OGcM&feature=youtu.be
+video_url: https://youtu.be/uoDMab1OGcM
 video_length: 0:46:27
 language_audio: English
 language_subs: x

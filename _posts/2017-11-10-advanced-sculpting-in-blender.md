@@ -7,7 +7,7 @@ video_id: advanced-sculpting-in-blender
 video_date: 2017-11-10
 video_creator: Blender
 channel_url: /channel/UCSMOQeBJ2RAnuFungnQOxLg
-video_url: https://www.youtube.com/watch?v=XeixeeWS_JA&feature=youtu.be
+video_url: https://youtu.be/XeixeeWS_JA
 video_length: 0:57:17
 language_audio: English
 language_subs: x

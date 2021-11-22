@@ -7,7 +7,7 @@ video_id: blender-278-multiple-tools-to-carve-or-to-create-objects
 video_date: 2016-09-04
 video_creator: Nick Fiorentino
 channel_url: /channel/UCphYaieWiwlpFLAXWUSBLgw
-video_url: https://www.youtube.com/watch?v=76V8Htn6HCY&feature=youtu.be
+video_url: https://youtu.be/76V8Htn6HCY
 video_length: 0:09:47
 language_audio: English
 language_subs: x

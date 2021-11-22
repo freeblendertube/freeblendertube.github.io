@@ -7,7 +7,7 @@ video_id: live-blender-grease-pencil-28-beta
 video_date: 2018-01-25
 video_creator: ToutApprendre
 channel_url: /channel/UCFMQG2aYndcIPHGNfmkTo_w
-video_url: https://www.youtube.com/watch?v=jePGiZYyYa0
+video_url: https://youtu.be/jePGiZYyYa0
 video_length: 1:36:01
 language_audio: English
 language_subs: x

@@ -7,7 +7,7 @@ video_id: grease-pencil-mystery-of-the-two-legged-man
 video_date: 2016-10-20
 video_creator: OpenToonzTraining
 channel_url: /channel/UC-t3I3gSAsZWsCvsxUkBZRA
-video_url: https://www.youtube.com/watch?v=-nwW9KIDhjE&feature=youtu.be
+video_url: https://youtu.be/-nwW9KIDhjE
 video_length: 0:18:13
 language_audio: English
 language_subs: x

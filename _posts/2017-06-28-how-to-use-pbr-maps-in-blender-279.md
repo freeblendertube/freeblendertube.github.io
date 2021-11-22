@@ -7,7 +7,7 @@ video_id: how-to-use-pbr-maps-in-blender-279
 video_date: 2017-06-28
 video_creator: Poliigon
 channel_url: /channel/UCWgn0IupCxKKxjPDn3NHMWg
-video_url: https://www.youtube.com/watch?v=aH6XPsEmozk&feature=youtu.be
+video_url: https://youtu.be/aH6XPsEmozk
 video_length: 0:12:38
 language_audio: English
 language_subs: x

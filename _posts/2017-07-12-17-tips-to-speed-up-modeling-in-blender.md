@@ -7,7 +7,7 @@ video_id: 17-tips-to-speed-up-modeling-in-blender
 video_date: 2017-07-12
 video_creator: Zacharias Reinhardt
 channel_url: /channel/UCWWybvw9jnpOdJq_6wTHryA
-video_url: https://www.youtube.com/watch?v=aP4CQrzrTG0&feature=youtu.be
+video_url: https://youtu.be/aP4CQrzrTG0
 video_length: 0:26:00
 language_audio: English
 language_subs: x

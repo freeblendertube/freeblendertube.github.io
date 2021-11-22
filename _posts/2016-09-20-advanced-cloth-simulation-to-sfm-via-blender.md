@@ -7,7 +7,7 @@ video_id: advanced-cloth-simulation-to-sfm-via-blender
 video_date: 2016-09-20
 video_creator: Columbidae's Vault
 channel_url: /channel/UCMAdf3uQQt9-N8AF906fNjA
-video_url: https://www.youtube.com/watch?v=zU9eMf5kKtg&feature=youtu.be
+video_url: https://youtu.be/zU9eMf5kKtg
 video_length: 0:11:12
 language_audio: English
 language_subs: x

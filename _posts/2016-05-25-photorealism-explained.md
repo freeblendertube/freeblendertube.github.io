@@ -7,7 +7,7 @@ video_id: photorealism-explained
 video_date: 2016-05-25
 video_creator: Blender Guru
 channel_url: /channel/UCOKHwx1VCdgnxwbjyb9Iu1g
-video_url: https://www.youtube.com/watch?v=R1-Ef54uTeU&feature=youtu.be
+video_url: https://youtu.be/R1-Ef54uTeU
 video_length: 0:53:49
 language_audio: English
 language_subs: x

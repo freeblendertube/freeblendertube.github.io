@@ -7,7 +7,7 @@ video_id: grease-pencil-stabilizer-blenderchat-and-blender-279a---blender-today-
 video_date: 2018-01-30
 video_creator: Blender Today
 channel_url: /channel/UCMcDgpAEPGYyX3J9tMBel8A
-video_url: https://www.youtube.com/watch?v=becVwJEARGg&feature=youtu.be
+video_url: https://youtu.be/becVwJEARGg
 video_length: 0:59:06
 language_audio: English
 language_subs: x

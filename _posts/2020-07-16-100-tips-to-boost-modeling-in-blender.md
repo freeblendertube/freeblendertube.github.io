@@ -7,7 +7,7 @@ video_id: 100-tips-to-boost-modeling-in-blender
 video_date: 2020-07-16
 video_creator: CG Boost
 channel_url: /channel/UCWWybvw9jnpOdJq_6wTHryA
-video_url: https://www.youtube.com/watch?v=JMBMHSca_j0
+video_url: https://youtu.be/JMBMHSca_j0
 video_length: 1:57:05
 language_audio: English
 language_subs: x

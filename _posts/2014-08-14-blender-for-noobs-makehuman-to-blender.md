@@ -7,7 +7,7 @@ video_id: blender-for-noobs-makehuman-to-blender
 video_date: 2014-08-14
 video_creator: BlenderForNoobs
 channel_url: /channel/UC6r5coMz_4Egjvg2WdQrplA
-video_url: https://www.youtube.com/watch?v=tCbB_perbes&feature=youtu.be
+video_url: https://youtu.be/tCbB_perbes
 video_length: 0:20:37
 language_audio: English
 language_subs: x

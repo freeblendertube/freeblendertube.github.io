@@ -83,7 +83,6 @@ VideoThumbnail.prototype.setOnMouseMoveListenerByDivElement = function (divElem,
 		var anchor = $(parentClass + ' > a')[0];
 
 		seconds = Math.round(divElem.dataset.time*(curPx/100));
-
 		// var div = $(parentClass + ' > a > div')[0];
 		// div.dataset.jumpto = "?t=" + seconds;
 

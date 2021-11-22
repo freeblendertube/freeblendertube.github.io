@@ -7,7 +7,7 @@ video_id: blender-quick-tip-on-ui-editors
 video_date: 2016-09-28
 video_creator: Jayanam
 channel_url: /channel/UCs5J4GVRB8s2P4hE-O0izrg
-video_url: https://www.youtube.com/watch?v=ZtTOFr4z_Y8&feature=youtu.be
+video_url: https://youtu.be/ZtTOFr4z_Y8
 video_length: 0:02:11
 language_audio: English
 language_subs: x

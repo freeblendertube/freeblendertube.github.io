@@ -7,7 +7,7 @@ video_id: blender-2-unreal-engine-4-the-complete-guide-static-animations-skeleta
 video_date: 2015-09-01
 video_creator: UnrealTek
 channel_url: /channel/UCX44PoFn-gUJ2_8VYAaVrbw
-video_url: https://www.youtube.com/watch?v=pSnvs369yIY&feature=youtu.be
+video_url: https://youtu.be/pSnvs369yIY
 video_length: 0:42:04
 language_audio: English
 language_subs: x

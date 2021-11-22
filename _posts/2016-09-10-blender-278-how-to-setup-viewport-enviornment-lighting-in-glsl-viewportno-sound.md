@@ -7,7 +7,7 @@ video_id: blender-278-how-to-setup-viewport-enviornment-lighting-in-glsl-viewpor
 video_date: 2016-09-10
 video_creator: Mas Baco
 channel_url: /channel/UCC0nh4dkLJb5E0Fm9CKzRRA
-video_url: https://www.youtube.com/watch?v=cXUOriz6I10&feature=youtu.be
+video_url: https://youtu.be/cXUOriz6I10
 video_length: 0:08:44
 language_audio: English
 language_subs: x

@@ -7,7 +7,7 @@ video_id: create-a-low-poly-tree-in-blender-for-unity
 video_date: 2015-07-12
 video_creator: Zulubo Productions
 channel_url: /channel/UCHpghktcfQK5VeY0Tc-bR5A
-video_url: https://www.youtube.com/watch?v=1eD0l7xlh2U&feature=youtu.be
+video_url: https://youtu.be/1eD0l7xlh2U
 video_length: 0:14:47
 language_audio: English
 language_subs: x

@@ -7,7 +7,7 @@ video_id: blender-cloth-simulation-tutorial
 video_date: 2016-09-08
 video_creator: Max Puliero
 channel_url: /channel/UCF74bjwDsihf8ZzDKGkTkkA
-video_url: https://www.youtube.com/watch?v=q06lPp2PNG4&feature=youtu.be
+video_url: https://youtu.be/q06lPp2PNG4
 video_length: 0:18:13
 language_audio: English
 language_subs: x

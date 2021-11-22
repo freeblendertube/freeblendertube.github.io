@@ -7,7 +7,7 @@ video_id: blender-character-animation-walk-cycle
 video_date: 2015-01-12
 video_creator: Sebastian Lague
 channel_url: /channel/UCmtyQOKKmrMVaKuRXz02jbQ
-video_url: https://www.youtube.com/watch?v=DuUWxUitJos&feature=youtu.be
+video_url: https://youtu.be/DuUWxUitJos
 video_length: 0:34:01
 language_audio: English
 language_subs: x

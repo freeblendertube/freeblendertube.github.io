@@ -7,7 +7,7 @@ video_id: blender-grease-pencil-animation-tutorial
 video_date: 2017-11-07
 video_creator: Jayanam
 channel_url: /channel/UCs5J4GVRB8s2P4hE-O0izrg
-video_url: https://www.youtube.com/watch?v=esczZ1qpoJ0&feature=youtu.be
+video_url: https://youtu.be/esczZ1qpoJ0
 video_length: 0:03:34
 language_audio: English
 language_subs: x

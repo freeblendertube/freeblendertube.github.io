@@ -7,7 +7,7 @@ video_id: blender-to-unreal-basics-012-vertex-animation
 video_date: 2016-09-30
 video_creator: Paul Swartz
 channel_url: /channel/UCaCPXjYfbTVvWNAJ6_EGrZA
-video_url: https://www.youtube.com/watch?v=CUTc4agcWa4&feature=youtu.be
+video_url: https://youtu.be/CUTc4agcWa4
 video_length: 0:10:53
 language_audio: English
 language_subs: x

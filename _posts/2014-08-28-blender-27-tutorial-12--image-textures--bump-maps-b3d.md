@@ -7,7 +7,7 @@ video_id: blender-27-tutorial-12--image-textures--bump-maps-b3d
 video_date: 2014-08-28
 video_creator: BornCG
 channel_url: /channel/UCdioEctcBLd2nw2aQkl8msw
-video_url: https://www.youtube.com/watch?v=NeWTTINkUG0&feature=youtu.be
+video_url: https://youtu.be/NeWTTINkUG0
 video_length: 0:23:54
 language_audio: English
 language_subs: x

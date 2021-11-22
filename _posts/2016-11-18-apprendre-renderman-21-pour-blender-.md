@@ -7,7 +7,7 @@ video_id: apprendre-renderman-21-pour-blender-
 video_date: 2016-11-18
 video_creator: ToutApprendre
 channel_url: /channel/UCFMQG2aYndcIPHGNfmkTo_w
-video_url: https://www.youtube.com/watch?v=XT9XVKq8jnA
+video_url: https://youtu.be/XT9XVKq8jnA
 video_length: 1:37:10
 language_audio: English
 language_subs: x

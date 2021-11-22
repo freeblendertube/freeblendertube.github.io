@@ -7,7 +7,7 @@ video_id: office-chair-part-1
 video_date: 2016-12-26
 video_creator: hussam zaid
 channel_url: /channel/UCIFZFUYLRBfaR9eCpVqvVsQ
-video_url: https://www.youtube.com/watch?v=Dt1B_qt761g&feature=youtu.be
+video_url: https://youtu.be/Dt1B_qt761g
 video_length: 0:21:44
 language_audio: English
 language_subs: x

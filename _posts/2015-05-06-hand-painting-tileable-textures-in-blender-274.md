@@ -7,7 +7,7 @@ video_id: hand-painting-tileable-textures-in-blender-274
 video_date: 2015-05-06
 video_creator: Wayward Art Company
 channel_url: /channel/UC524_NOif1p3YPC39UAbF1A
-video_url: https://www.youtube.com/watch?v=bp-hESP55js&feature=youtu.be
+video_url: https://youtu.be/bp-hESP55js
 video_length: 0:36:42
 language_audio: English
 language_subs: x

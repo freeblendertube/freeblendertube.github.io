@@ -7,7 +7,7 @@ video_id: space-station-blender-27-to-unity-46-tutorial-part-1-model-creation
 video_date: 2015-02-24
 video_creator: Richard Hawkes
 channel_url: /channel/UCiYIoN_wIwA0etN2DHbI6Zw
-video_url: https://www.youtube.com/watch?v=aZd6aNXfXtI&feature=youtu.be
+video_url: https://youtu.be/aZd6aNXfXtI
 video_length: 0:36:33
 language_audio: English
 language_subs: x

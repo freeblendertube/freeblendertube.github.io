@@ -7,7 +7,7 @@ video_id: introduction-sculpting-in-blender-tutorial-en
 video_date: 2016-06-11
 video_creator: AgenZasBrothers
 channel_url: /channel/UCOOmTjuGS9VwH3rziflB7Xg
-video_url: https://www.youtube.com/watch?v=tZnUgt659oI&feature=youtu.be
+video_url: https://youtu.be/tZnUgt659oI
 video_length: 0:41:18
 language_audio: English
 language_subs: x

@@ -7,7 +7,7 @@ video_id: angelina-jolie-blender-timelapse
 video_date: 2016-11-03
 video_creator: fleksdesign
 channel_url: /channel/UCuOzb_cZAwpnjCyWAt5kV0A
-video_url: https://www.youtube.com/watch?v=Vu6jdSaSVyo&feature=youtu.be
+video_url: https://youtu.be/Vu6jdSaSVyo
 video_length: 0:13:51
 language_audio: English
 language_subs: x

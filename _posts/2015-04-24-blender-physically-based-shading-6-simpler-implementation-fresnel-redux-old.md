@@ -7,7 +7,7 @@ video_id: blender-physically-based-shading-6-simpler-implementation-fresnel-redu
 video_date: 2015-04-24
 video_creator: CynicatPro
 channel_url: /channel/UCqoc1p9ov0CwzvKObvrKxMA
-video_url: https://www.youtube.com/watch?v=6pJrlEzbNek&feature=youtu.be
+video_url: https://youtu.be/6pJrlEzbNek
 video_length: 0:22:19
 language_audio: English
 language_subs: x

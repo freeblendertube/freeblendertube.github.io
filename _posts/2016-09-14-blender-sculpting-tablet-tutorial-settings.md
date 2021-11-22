@@ -7,7 +7,7 @@ video_id: blender-sculpting-tablet-tutorial-settings
 video_date: 2016-09-14
 video_creator: Jayanam
 channel_url: /channel/UCs5J4GVRB8s2P4hE-O0izrg
-video_url: https://www.youtube.com/watch?v=zb85kJyfq1w&feature=youtu.be
+video_url: https://youtu.be/zb85kJyfq1w
 video_length: 0:07:51
 language_audio: English
 language_subs: x

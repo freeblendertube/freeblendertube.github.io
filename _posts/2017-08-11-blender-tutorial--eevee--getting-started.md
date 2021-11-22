@@ -7,7 +7,7 @@ video_id: blender-tutorial--eevee--getting-started
 video_date: 2017-08-11
 video_creator: CG Masters
 channel_url: /channel/UCCxay0KiyLlawfgoZ2mVnNQ
-video_url: https://www.youtube.com/watch?v=DR_uRoKuST8
+video_url: https://youtu.be/DR_uRoKuST8
 video_length: 0:47:58
 language_audio: English
 language_subs: x

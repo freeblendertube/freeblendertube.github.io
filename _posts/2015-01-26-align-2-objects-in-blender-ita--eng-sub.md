@@ -7,7 +7,7 @@ video_id: align-2-objects-in-blender-ita--eng-sub
 video_date: 2015-01-26
 video_creator: Max Puliero
 channel_url: /channel/UCF74bjwDsihf8ZzDKGkTkkA
-video_url: https://www.youtube.com/watch?v=Q9BTPRxXlf0&feature=youtu.be
+video_url: https://youtu.be/Q9BTPRxXlf0
 video_length: 0:06:06
 language_audio: English
 language_subs: x

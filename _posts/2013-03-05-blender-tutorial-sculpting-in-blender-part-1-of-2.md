@@ -7,7 +7,7 @@ video_id: blender-tutorial-sculpting-in-blender-part-1-of-2
 video_date: 2013-03-05
 video_creator: BlenderMania
 channel_url: /channel/UCcWkx8VJk-5ePjJnD2aVb7g
-video_url: https://www.youtube.com/watch?v=mTOBCp2k1R8&feature=youtu.be
+video_url: https://youtu.be/mTOBCp2k1R8
 video_length: 0:23:46
 language_audio: English
 language_subs: x

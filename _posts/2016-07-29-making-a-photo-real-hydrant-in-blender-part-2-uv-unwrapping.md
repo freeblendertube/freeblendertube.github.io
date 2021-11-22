@@ -7,7 +7,7 @@ video_id: making-a-photo-real-hydrant-in-blender-part-2-uv-unwrapping
 video_date: 2016-07-29
 video_creator: Blackhart Films
 channel_url: /channel/UC2zZ4KOTrOPTuvzVvBlLvXQ
-video_url: https://www.youtube.com/watch?v=D_nISQNPvIk&feature=youtu.be
+video_url: https://youtu.be/D_nISQNPvIk
 video_length: 0:12:02
 language_audio: English
 language_subs: x

@@ -7,7 +7,7 @@ video_id: blender-3d-моделирование-концепта-городка-
 video_date: 2016-02-21
 video_creator: Almas Iskak
 channel_url: /channel/UCjYIK2O2AeXQHMnNUF_hInQ
-video_url: https://www.youtube.com/watch?v=hl719WJ1BuE
+video_url: https://youtu.be/hl719WJ1BuE
 video_length: 0:29:54
 language_audio: English
 language_subs: x

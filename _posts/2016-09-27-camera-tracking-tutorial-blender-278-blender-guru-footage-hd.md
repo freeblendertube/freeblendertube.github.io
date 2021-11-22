@@ -7,7 +7,7 @@ video_id: camera-tracking-tutorial-blender-278-blender-guru-footage-hd
 video_date: 2016-09-27
 video_creator: Blender Buzz
 channel_url: /channel/UCNxIpuJ9MF8rcl9rrXAPUdQ
-video_url: https://www.youtube.com/watch?v=2uwCURu9B4Q&feature=youtu.be
+video_url: https://youtu.be/2uwCURu9B4Q
 video_length: 0:50:34
 language_audio: English
 language_subs: x

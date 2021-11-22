@@ -7,7 +7,7 @@ video_id: how-to-export-blender-objects-to-unity-quickly-and-properly-quicktip--
 video_date: 2014-11-21
 video_creator: BlenderTek
 channel_url: /channel/UCP_sduB4CJqkg4JBvxpbPSw
-video_url: https://www.youtube.com/watch?v=ZpGfw-JcfYY&feature=youtu.be
+video_url: https://youtu.be/ZpGfw-JcfYY
 video_length: 0:12:55
 language_audio: English
 language_subs: x

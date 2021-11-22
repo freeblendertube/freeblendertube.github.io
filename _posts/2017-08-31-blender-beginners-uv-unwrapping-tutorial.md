@@ -7,7 +7,7 @@ video_id: blender-beginners-uv-unwrapping-tutorial
 video_date: 2017-08-31
 video_creator: Blender Guru
 channel_url: /channel/UCOKHwx1VCdgnxwbjyb9Iu1g
-video_url: https://www.youtube.com/watch?v=scPSP_U858k&vl=en
+video_url: https://youtu.be/scPSP_U858k
 video_length: 0:26:08
 language_audio: English
 language_subs: x

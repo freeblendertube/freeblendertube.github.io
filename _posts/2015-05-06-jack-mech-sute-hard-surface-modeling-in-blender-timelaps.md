@@ -7,7 +7,7 @@ video_id: jack-mech-sute-hard-surface-modeling-in-blender-timelaps
 video_date: 2015-05-06
 video_creator: Ureh BlendAnime
 channel_url: /channel/UCEOAdTbsYZhw4atrYxs8Uuw
-video_url: https://www.youtube.com/watch?v=pOflikb7TNs&app=desktop
+video_url: https://youtu.be/pOflikb7TNs
 video_length: 2:10:44
 language_audio: English
 language_subs: x

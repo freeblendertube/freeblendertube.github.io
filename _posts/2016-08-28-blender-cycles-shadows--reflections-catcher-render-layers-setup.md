@@ -7,7 +7,7 @@ video_id: blender-cycles-shadows--reflections-catcher-render-layers-setup
 video_date: 2016-08-28
 video_creator: JorgeBernier5d
 channel_url: /channel/UCAZzcRS1qrABArK6WhswCcQ
-video_url: https://www.youtube.com/watch?v=2OhybKuHTlM&feature=youtu.be
+video_url: https://youtu.be/2OhybKuHTlM
 video_length: 0:10:38
 language_audio: English
 language_subs: x

@@ -7,7 +7,7 @@ video_id: blender-table-substance-painter-2-texturing-tutorial
 video_date: 2017-01-28
 video_creator: Jayanam
 channel_url: /channel/UCs5J4GVRB8s2P4hE-O0izrg
-video_url: https://www.youtube.com/watch?v=HWfEwT2nINM&feature=youtu.be
+video_url: https://youtu.be/HWfEwT2nINM
 video_length: 0:10:35
 language_audio: English
 language_subs: x

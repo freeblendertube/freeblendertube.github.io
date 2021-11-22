@@ -7,7 +7,7 @@ video_id: freehand-sketching-ของ-blender-3d-278-blenderthai
 video_date: 2016-09-23
 video_creator: Blender Thai
 channel_url: /channel/UC0zuycrzB9xY-_i98LLXtmA
-video_url: https://www.youtube.com/watch?v=A_Nx5ttNNpg
+video_url: https://youtu.be/A_Nx5ttNNpg
 video_length: 0:10:39
 language_audio: English
 language_subs: x

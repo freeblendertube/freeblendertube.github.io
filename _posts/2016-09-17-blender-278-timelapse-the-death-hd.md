@@ -7,7 +7,7 @@ video_id: blender-278-timelapse-the-death-hd
 video_date: 2016-09-17
 video_creator: 3D escape
 channel_url: /channel/UCJy9q1m5Z3Uq9OSSYixeMxQ
-video_url: https://www.youtube.com/watch?v=_-Avm_oVW8k&feature=youtu.be
+video_url: https://youtu.be/_-Avm_oVW8k
 video_length: 0:08:53
 language_audio: English
 language_subs: x

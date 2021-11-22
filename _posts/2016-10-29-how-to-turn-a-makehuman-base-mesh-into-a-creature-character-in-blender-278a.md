@@ -7,7 +7,7 @@ video_id: how-to-turn-a-makehuman-base-mesh-into-a-creature-character-in-blender
 video_date: 2016-10-29
 video_creator: Alimayo Arango
 channel_url: /channel/UC_47ItRT9U4nnElhSK8JcmQ
-video_url: https://www.youtube.com/watch?v=7IAMp16oj5E&feature=youtu.be
+video_url: https://youtu.be/7IAMp16oj5E
 video_length: 2:53:56
 language_audio: English
 language_subs: x

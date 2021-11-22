@@ -7,7 +7,7 @@ video_id: blender-inside-out-extrude-and-inset
 video_date: 2012-06-30
 video_creator: Blender
 channel_url: /channel/UCSMOQeBJ2RAnuFungnQOxLg
-video_url: https://www.youtube.com/watch?v=g7k9Hf1k62E
+video_url: https://youtu.be/g7k9Hf1k62E
 video_length: 0:07:26
 language_audio: English
 language_subs: x

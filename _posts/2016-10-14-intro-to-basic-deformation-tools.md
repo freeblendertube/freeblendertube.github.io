@@ -7,7 +7,7 @@ video_id: intro-to-basic-deformation-tools
 video_date: 2016-10-14
 video_creator: Claas Kuhnen
 channel_url: /channel/UCEEDrQm92-KTIgxO1Dsg6YQ
-video_url: https://www.youtube.com/watch?v=FIpcXDELDF8&feature=youtu.be
+video_url: https://youtu.be/FIpcXDELDF8
 video_length: 0:24:49
 language_audio: English
 language_subs: x

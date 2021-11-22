@@ -7,7 +7,7 @@ video_id: game-level-texturing-modeling-and-retopology-part-25
 video_date: 2014-07-11
 video_creator: Gleb Alexandrov
 channel_url: /channel/UCVA3cYOgsTN4hs3v7pjne7w
-video_url: https://www.youtube.com/watch?v=8SbTbuK0dZk&feature=youtu.be
+video_url: https://youtu.be/8SbTbuK0dZk
 video_length: 0:03:40
 language_audio: English
 language_subs: x

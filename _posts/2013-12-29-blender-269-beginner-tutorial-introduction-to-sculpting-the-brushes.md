@@ -7,7 +7,7 @@ video_id: blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes
 video_date: 2013-12-29
 video_creator: Allan Jeremy
 channel_url: /channel/UCB7kPKJ2gznFwBOaUW7k-8Q
-video_url: https://www.youtube.com/watch?v=ouxnyRHwvyo&feature=youtu.be
+video_url: https://youtu.be/ouxnyRHwvyo
 video_length: 0:41:18
 language_audio: English
 language_subs: x

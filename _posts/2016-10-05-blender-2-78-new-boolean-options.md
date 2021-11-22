@@ -7,7 +7,7 @@ video_id: blender-2-78-new-boolean-options
 video_date: 2016-10-05
 video_creator: Claas Kuhnen
 channel_url: /channel/UCEEDrQm92-KTIgxO1Dsg6YQ
-video_url: https://www.youtube.com/watch?v=Ji-YlHdxmU0&feature=youtu.be
+video_url: https://youtu.be/Ji-YlHdxmU0
 video_length: 0:06:44
 language_audio: English
 language_subs: x

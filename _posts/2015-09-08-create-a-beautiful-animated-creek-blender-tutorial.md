@@ -7,7 +7,7 @@ video_id: create-a-beautiful-animated-creek-blender-tutorial
 video_date: 2015-09-08
 video_creator: CG Geek
 channel_url: /channel/UCG8AxMVa6eutIGxrdnDxWpQ
-video_url: https://www.youtube.com/watch?v=VbHqIDLa39I&feature=youtu.be
+video_url: https://youtu.be/VbHqIDLa39I
 video_length: 1:20:45
 language_audio: English
 language_subs: x

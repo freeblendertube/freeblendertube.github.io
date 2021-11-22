@@ -7,7 +7,7 @@ video_id: blender-to-unity-tutorial-import-with-textures
 video_date: 2014-12-03
 video_creator: Gamerdad81
 channel_url: /channel/UCCHFS0odXntBz9-5SvB5Ikg
-video_url: https://www.youtube.com/watch?v=EeWw0CjH9wg&feature=youtu.be
+video_url: https://youtu.be/EeWw0CjH9wg
 video_length: 0:05:52
 language_audio: English
 language_subs: x

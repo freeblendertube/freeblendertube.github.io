@@ -7,7 +7,7 @@ video_id: blender--intro--particles-tutorial-english--fast--easy
 video_date: 2016-09-23
 video_creator: Zephyr Maxwell - BlendFuture
 channel_url: /channel/UC5L0YGgZgoMAAOmXHm4Ifgg
-video_url: https://www.youtube.com/watch?v=QVz0nqSds_8&feature=youtu.be
+video_url: https://youtu.be/QVz0nqSds_8
 video_length: 0:09:41
 language_audio: English
 language_subs: x

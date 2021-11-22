@@ -7,7 +7,7 @@ video_id: fractal-combat-game-asset-hard-surface-modeling--texturing-in-blender
 video_date: 2012-03-16
 video_creator: Max Puliero
 channel_url: /channel/UCF74bjwDsihf8ZzDKGkTkkA
-video_url: https://www.youtube.com/watch?v=szPtVaF3DvU&feature=youtu.be
+video_url: https://youtu.be/szPtVaF3DvU
 video_length: 0:46:47
 language_audio: English
 language_subs: x

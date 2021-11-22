@@ -7,7 +7,7 @@ video_id: plant-creation-touch--detail-bending-tutorial-cryblend-cryengine
 video_date: 2016-07-01
 video_creator: Henry Kelly
 channel_url: /channel/UCiAt_vWkixHPyE7udejGfUw
-video_url: https://www.youtube.com/watch?v=nxCFEcWBSFY&feature=youtu.be
+video_url: https://youtu.be/nxCFEcWBSFY
 video_length: 0:38:00
 language_audio: English
 language_subs: x

@@ -7,7 +7,7 @@ video_id: wheel-rigginganimation-tutorial-blender-278--dynamic-displacement-hd
 video_date: 2016-10-01
 video_creator: Blender Buzz
 channel_url: /channel/UCNxIpuJ9MF8rcl9rrXAPUdQ
-video_url: https://www.youtube.com/watch?v=eR_RHP4G-kQ&feature=youtu.be
+video_url: https://youtu.be/eR_RHP4G-kQ
 video_length: 0:19:24
 language_audio: English
 language_subs: x

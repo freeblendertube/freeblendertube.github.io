@@ -7,7 +7,7 @@ video_id: blender-speed-sculpt-6-october-2016
 video_date: 2016-10-06
 video_creator: Max Puliero
 channel_url: /channel/UCF74bjwDsihf8ZzDKGkTkkA
-video_url: https://www.youtube.com/watch?v=4_am-ydDTb8&feature=youtu.be
+video_url: https://youtu.be/4_am-ydDTb8
 video_length: 0:26:57
 language_audio: English
 language_subs: x

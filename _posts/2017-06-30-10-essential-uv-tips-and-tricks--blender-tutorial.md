@@ -7,7 +7,7 @@ video_id: 10-essential-uv-tips-and-tricks--blender-tutorial
 video_date: 2017-06-30
 video_creator: CG Masters
 channel_url: /channel/UCCxay0KiyLlawfgoZ2mVnNQ
-video_url: https://www.youtube.com/watch?v=brnaAL-QwhU&feature=youtu.be
+video_url: https://youtu.be/brnaAL-QwhU
 video_length: 0:32:27
 language_audio: English
 language_subs: x

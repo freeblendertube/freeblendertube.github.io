@@ -7,7 +7,7 @@ video_id: painting-precision-textures-in-blender
 video_date: 2017-01-31
 video_creator: CG Cookie - Blender Training
 channel_url: /channel/UC9VayT7q3pQ7tdF-TG4Q0yQ
-video_url: https://www.youtube.com/watch?v=tDN4Wwl6EOY&feature=youtu.be
+video_url: https://youtu.be/tDN4Wwl6EOY
 video_length: 0:02:47
 language_audio: English
 language_subs: x

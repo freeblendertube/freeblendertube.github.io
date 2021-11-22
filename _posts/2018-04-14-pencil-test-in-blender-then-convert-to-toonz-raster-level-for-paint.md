@@ -7,7 +7,7 @@ video_id: pencil-test-in-blender-then-convert-to-toonz-raster-level-for-paint
 video_date: 2018-04-14
 video_creator: blendedplanet
 channel_url: /channel/UCdWi0E3nurESirVtp46fzuw
-video_url: https://www.youtube.com/watch?v=HFJXSRI6M-g&t=32s
+video_url: https://youtu.be/HFJXSRI6M-g
 video_length: 0:20:50
 language_audio: English
 language_subs: x

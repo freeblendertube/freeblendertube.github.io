@@ -7,7 +7,7 @@ video_id: how-to-create-pbr-materials-using-the-principled-shader-in-blender
 video_date: 2017-06-30
 video_creator: BlenderBrit
 channel_url: /channel/UCuuNgt7z0o9LYMRP3krwNcg
-video_url: https://www.youtube.com/watch?v=bOhPX7H3ZQc&feature=youtu.be
+video_url: https://youtu.be/bOhPX7H3ZQc
 video_length: 1:00:06
 language_audio: English
 language_subs: x

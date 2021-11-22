@@ -7,7 +7,7 @@ video_id: on-your-own-dev-stream-68-modelling-rocks-in-blender
 video_date: 2016-12-07
 video_creator: Andrei Ghenoiu
 channel_url: /channel/UCzxYZ4TgBbhYPjC6Ws_Gb6w
-video_url: https://www.youtube.com/watch?v=pzk77QHq2UE&feature=youtu.be
+video_url: https://youtu.be/pzk77QHq2UE
 video_length: 1:41:48
 language_audio: English
 language_subs: x

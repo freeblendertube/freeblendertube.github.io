@@ -7,7 +7,7 @@ video_id: hand-painted-textures-in-blender
 video_date: 2013-06-23
 video_creator: XRG81
 channel_url: /channel/UC1dVYKd5MtCW_1lndmyWbQw
-video_url: https://www.youtube.com/watch?v=SrApuPOayoU&feature=youtu.be
+video_url: https://youtu.be/SrApuPOayoU
 video_length: 0:12:58
 language_audio: English
 language_subs: x

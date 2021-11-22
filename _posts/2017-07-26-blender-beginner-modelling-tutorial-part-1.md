@@ -7,7 +7,7 @@ video_id: blender-beginner-modelling-tutorial-part-1
 video_date: 2017-07-26
 video_creator: Blender Guru
 channel_url: /channel/UCOKHwx1VCdgnxwbjyb9Iu1g
-video_url: https://www.youtube.com/watch?v=yi87Dap_WOc&feature=youtu.be
+video_url: https://youtu.be/yi87Dap_WOc
 video_length: 0:13:39
 language_audio: English
 language_subs: x

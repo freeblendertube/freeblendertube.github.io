@@ -7,7 +7,7 @@ video_id: axe-modeling-and-sculpting-in-blender
 video_date: 2016-04-30
 video_creator: Алексей Ковалев
 channel_url: /channel/UCGjLmESIKJIRfXQe_BOBaQQ
-video_url: https://www.youtube.com/watch?v=hPjVxDOSK9g
+video_url: https://youtu.be/hPjVxDOSK9g
 video_length: 0:45:26
 language_audio: English
 language_subs: x

@@ -7,7 +7,7 @@ video_id: first-steps-blender-fundamentals
 video_date: 2017-07-25
 video_creator: Blender
 channel_url: /channel/UCSMOQeBJ2RAnuFungnQOxLg
-video_url: https://www.youtube.com/watch?v=kes2qmijy7w&feature=youtu.be
+video_url: https://youtu.be/kes2qmijy7w
 video_length: 0:01:33
 language_audio: English
 language_subs: x

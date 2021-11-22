@@ -7,7 +7,7 @@ video_id: intro-to-python-scripting-in-blender-boston-meetup-workshop
 video_date: 2017-02-26
 video_creator: TheDuckCow
 channel_url: /channel/UCi_6FqLWdPw_xZTpSlvARLw
-video_url: https://www.youtube.com/watch?v=KNa5kJd2Epo&feature=youtu.be
+video_url: https://youtu.be/KNa5kJd2Epo
 video_length: 1:07:14
 language_audio: English
 language_subs: x

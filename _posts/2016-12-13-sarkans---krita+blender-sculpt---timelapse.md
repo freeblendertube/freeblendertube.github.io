@@ -7,7 +7,7 @@ video_id: sarkans---krita+blender-sculpt---timelapse
 video_date: 2016-12-13
 video_creator: Irving Ayala
 channel_url: /channel/UC9YjEgB4Danlp5DTDRZXs0A
-video_url: https://www.youtube.com/watch?v=fgkKz0HGRPU&feature=youtu.be
+video_url: https://youtu.be/fgkKz0HGRPU
 video_length: 0:47:52
 language_audio: English
 language_subs: x
