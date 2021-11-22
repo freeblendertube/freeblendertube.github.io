@@ -106,9 +106,6 @@
     
 
     
-    
-
-    
 
     
     
@@ -124,7 +121,7 @@
                     <td class="yt-cell"><i>by</i> <div class="blenderguru temp_video_creator"><span>Blender Guru</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=scPSP_U858k&vl=en rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/scPSP_U858k rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/blender-beginners-uv-unwrapping-tutorial-preview.jpg"></div>
                         </a>
                     </td>
@@ -161,7 +158,7 @@
                     <td class="yt-cell"><i>by</i> <div class="blenderguru temp_video_creator"><span>Blender Guru</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=yi87Dap_WOc&feature=youtu.be rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/yi87Dap_WOc rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/blender-beginner-modelling-tutorial-part-1-preview.jpg"></div>
                         </a>
                     </td>
@@ -267,7 +264,7 @@
                     <td class="yt-cell"><i>by</i> <div class="blenderguru temp_video_creator"><span>Blender Guru</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?time_continue=19&v=VT5oZndzj68 rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/VT5oZndzj68 rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/beginners-guide-to-learning-3d-computer-graphics-preview.jpg"></div>
                         </a>
                     </td>
@@ -406,7 +403,7 @@
                     <td class="yt-cell"><i>by</i> <div class="blenderguru temp_video_creator"><span>Blender Guru</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=R1-Ef54uTeU&feature=youtu.be rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/R1-Ef54uTeU rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/photorealism-explained-preview.jpg"></div>
                         </a>
                     </td>
@@ -418,9 +415,6 @@
         <p class="post-meta"></p>
 
     </div>
-    
-    
-
     
     
 
@@ -611,10 +605,13 @@
     });
 
     $('.yt-cell-thumb > a').on('click', function(e) {
+        // https://stackoverflow.com/questions/25234503/jquery-click-function-not-updating
+        // https://stackoverflow.com/questions/7261619/jquery-data-vs-attr
+
         // var divWithData = $(this).children("div:first");
         // console.log(divWithData.data('jumpto'));
-        alert($(this).data('original') + $(this).data('jumpto'));
-        e.originalEvent.currentTarget.href = $(this).data('original') + $(this).data('jumpto');
+
+        e.originalEvent.currentTarget.href = $(this).attr('data-original') + $(this).attr('data-jumpto');
         event.stopPropagation();
     });
 

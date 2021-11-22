@@ -175,9 +175,6 @@
     
 
     
-    
-
-    
 
     
     
@@ -193,7 +190,7 @@
                     <td class="yt-cell"><i>by</i> <div class="claaskuhnen temp_video_creator"><span>Claas Kuhnen</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=q-OcET8MCdA&feature=youtu.be rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/q-OcET8MCdA rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/braun-ks-20-layered-materials-preview.jpg"></div>
                         </a>
                     </td>
@@ -233,7 +230,7 @@
                     <td class="yt-cell"><i>by</i> <div class="claaskuhnen temp_video_creator"><span>Claas Kuhnen</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=FIpcXDELDF8&feature=youtu.be rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/FIpcXDELDF8 rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/intro-to-basic-deformation-tools-preview.jpg"></div>
                         </a>
                     </td>
@@ -273,7 +270,7 @@
                     <td class="yt-cell"><i>by</i> <div class="claaskuhnen temp_video_creator"><span>Claas Kuhnen</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=eKMZ7CkTUwk&feature=youtu.be rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/eKMZ7CkTUwk rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/chair-structures-preview.jpg"></div>
                         </a>
                     </td>
@@ -310,7 +307,7 @@
                     <td class="yt-cell"><i>by</i> <div class="claaskuhnen temp_video_creator"><span>Claas Kuhnen</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=Ji-YlHdxmU0&feature=youtu.be rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/Ji-YlHdxmU0 rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/blender-2-78-new-boolean-options-preview.jpg"></div>
                         </a>
                     </td>
@@ -341,7 +338,7 @@
                     <td class="yt-cell"><i>by</i> <div class="claaskuhnen temp_video_creator"><span>Claas Kuhnen</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=dXXoWQk-W8I&feature=youtu.be rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/dXXoWQk-W8I rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/bent-plywood-stool-part-2-texturing-preview.jpg"></div>
                         </a>
                     </td>
@@ -372,7 +369,7 @@
                     <td class="yt-cell"><i>by</i> <div class="claaskuhnen temp_video_creator"><span>Claas Kuhnen</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=zl_UG6bXWxs rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/zl_UG6bXWxs rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/bent-plywood-stool-part-1-sculpting-in-blender-preview.jpg"></div>
                         </a>
                     </td>
@@ -384,9 +381,6 @@
         <p class="post-meta"></p>
 
     </div>
-    
-    
-
     
     
 
@@ -667,10 +661,13 @@
     });
 
     $('.yt-cell-thumb > a').on('click', function(e) {
+        // https://stackoverflow.com/questions/25234503/jquery-click-function-not-updating
+        // https://stackoverflow.com/questions/7261619/jquery-data-vs-attr
+
         // var divWithData = $(this).children("div:first");
         // console.log(divWithData.data('jumpto'));
-        alert($(this).data('original') + $(this).data('jumpto'));
-        e.originalEvent.currentTarget.href = $(this).data('original') + $(this).data('jumpto');
+
+        e.originalEvent.currentTarget.href = $(this).attr('data-original') + $(this).attr('data-jumpto');
         event.stopPropagation();
     });
 

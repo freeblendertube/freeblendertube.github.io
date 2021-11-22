@@ -331,9 +331,6 @@
     
 
     
-    
-
-    
 
     
     
@@ -349,7 +346,7 @@
                     <td class="yt-cell"><i>by</i> <div class="cynicatpro temp_video_creator"><span>CynicatPro</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=uDHKz39qZCc&feature=youtu.be rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/uDHKz39qZCc rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/blender-tip-why-the-bevel-tool-is-awesome-preview.jpg"></div>
                         </a>
                     </td>
@@ -410,7 +407,7 @@
                     <td class="yt-cell"><i>by</i> <div class="cynicatpro temp_video_creator"><span>CynicatPro</span></div></td>
 
                     <td class="yt-cell-thumb">
-                        <a href=https://www.youtube.com/watch?v=6pJrlEzbNek&feature=youtu.be rel="noopener noreferrer" target="_blank">
+                        <a href=https://youtu.be/6pJrlEzbNek rel="noopener noreferrer" target="_blank">
                             <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/blender-physically-based-shading-6-simpler-implementation-fresnel-redux-old-preview.jpg"></div>
                         </a>
                     </td>
@@ -422,9 +419,6 @@
         <p class="post-meta"></p>
 
     </div>
-    
-    
-
     
     
 
@@ -555,10 +549,13 @@
     });
 
     $('.yt-cell-thumb > a').on('click', function(e) {
+        // https://stackoverflow.com/questions/25234503/jquery-click-function-not-updating
+        // https://stackoverflow.com/questions/7261619/jquery-data-vs-attr
+
         // var divWithData = $(this).children("div:first");
         // console.log(divWithData.data('jumpto'));
-        alert($(this).data('original') + $(this).data('jumpto'));
-        e.originalEvent.currentTarget.href = $(this).data('original') + $(this).data('jumpto');
+
+        e.originalEvent.currentTarget.href = $(this).attr('data-original') + $(this).attr('data-jumpto');
         event.stopPropagation();
     });
 
