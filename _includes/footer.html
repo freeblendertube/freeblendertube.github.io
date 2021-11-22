@@ -8,7 +8,29 @@
         thumbs.imagePaddingBottomInPercentage(0);
         thumbs.setMouseMoveActive();
         thumbs.displayThumbs();
+
     });
+
+    $('.yt-cell-thumb > a').on('click', function(e) {
+        // var divWithData = $(this).children("div:first");
+        // console.log(divWithData.data('jumpto'));
+        alert($(this).data('original') + $(this).data('jumpto'));
+        e.originalEvent.currentTarget.href = $(this).data('original') + $(this).data('jumpto');
+        event.stopPropagation();
+    });
+
+    // SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites
+    /*
+    $( ".yt-real-thumb" ).on({
+        mouseenter: function () {
+            var index = $( ".yt-real-thumb" ).index( this );
+            alert(index);
+        },
+        mouseleave: function () {
+            //stuff to do on mouse leave
+        }
+    });
+    */
 </script>
 </body>
 </html>

@@ -7,7 +7,7 @@ video_id: blender-29-pbr-texturing-beginner-tutorial
 video_date: 2020-12-03
 video_creator: Jayanam
 channel_url: /channel/UCs5J4GVRB8s2P4hE-O0izrg
-video_url: https://www.youtube.com/watch?v=A7QteBvUOdQ
+video_url: https://youtu.be/A7QteBvUOdQ
 video_length: 0:06:56
 language_audio: English
 language_subs: x

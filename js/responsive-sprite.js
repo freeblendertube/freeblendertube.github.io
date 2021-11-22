@@ -69,18 +69,27 @@ VideoThumbnail.prototype.setDivBackgroundByPosX = function (divElem, xPosition) 
 
 VideoThumbnail.prototype.setOnMouseMoveListenerByDivElement = function (divElem, thumbnailMapWidth) {
 	var self = this;
+	var seconds = null;
 	divElem.onmousemove = function (event) {
 		var percentagePos = (event.offsetX / this.offsetWidth);
 		var curPx = self.getImageNrByMousePosition(thumbnailMapWidth, thumbnailMapWidth / self.maxThumbnailNr, percentagePos);
 		var xPosition = self.getXPositionByDefaultThumbnailNr(curPx);
 		self.setDivBackgroundByPosX(this, xPosition);
+
+		// SAM: set to time
 		var parentClass = divElem.className.split(' ')[1];
 		parentClass = ".yt-cell-thumb." + parentClass;
-		console.log(parentClass + ' > .time');
 		var time = $(parentClass + ' > .time')[0];
-		// var samtime = document.getElementsByClassName(parentClass).getElementsByClassName("time");
-		time.innerHTML = "cow";
-		// console.log(divElem.className.split(' ')[1]);
+		var anchor = $(parentClass + ' > a')[0];
+
+		seconds = Math.round(divElem.dataset.time*(curPx/100));
+
+		// var div = $(parentClass + ' > a > div')[0];
+		// div.dataset.jumpto = "?t=" + seconds;
+
+		anchor.dataset.jumpto = "?t=" + seconds;
+		seconds = new Date(seconds * 1000).toISOString().substr(11, 8);
+		time.innerHTML = seconds;
 	};
 };
 
@@ -90,6 +99,12 @@ VideoThumbnail.prototype.setOnMouseOutListenerByDivElement = function (divElem, 
 		var defaultThumbnailNr = this.dataset.hasOwnProperty(self.defaultThumbNrName) ? this.dataset.defaultimgnr : 0;
 		var xPosition = self.getXPositionByDefaultThumbnailNr(defaultThumbnailNr);
 		self.setDivBackgroundByPosX(this, xPosition);
+
+		// SAM: remove time
+		var parentClass = divElem.className.split(' ')[1];
+		parentClass = ".yt-cell-thumb." + parentClass;
+		var time = $(parentClass + ' > .time')[0];
+		time.innerHTML = "";
 	};
 };
 
@@ -116,9 +131,8 @@ VideoThumbnail.prototype.displayThumbs = function () {
         var self = this;
         var divItem = this.thumbnailDivList[i];
         this.getThumbnailMapWidthByDivElement(divItem, defaultThumbnailNr, function(imageWidth, divElem, defaultThumbNr) {
-			// console.log("gobochucki: " + divElem);
 
-			// SAMS RATIO
+			// SAM: my ratio
 			var newHeight = 240 * (180 / (imageWidth/100));
 			// divElem.style.border = '1px solid red';
 			divElem.style.height = newHeight + 'px';

@@ -2,9 +2,22 @@ collections:
   timelapse:
     output: true
 
+pagination:
+  enabled: true
+  per_page: 10
+  category: 'blog'
+  sort_field: 'date'
+  sort_reverse: true
+
+# whitelist:
+#   - jekyll-paginate
+#   - jekyll-sitemap
+#   - jekyll-gist
+#   - jekyll-feed
+#   - jemoji
+
 name: "sizeoverload"
 description: "sizeoverload"
-paginate: 10
 
 safe:        false
 watch:       false    # deprecated
