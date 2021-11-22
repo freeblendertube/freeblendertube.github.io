@@ -69,16 +69,12 @@ VideoThumbnail.prototype.setDivBackgroundByPosX = function (divElem, xPosition) 
 
 VideoThumbnail.prototype.setOnMouseMoveListenerByDivElement = function (divElem, thumbnailMapWidth) {
 	var self = this;
-<<<<<<< HEAD
 	var seconds = null;
-=======
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 	divElem.onmousemove = function (event) {
 		var percentagePos = (event.offsetX / this.offsetWidth);
 		var curPx = self.getImageNrByMousePosition(thumbnailMapWidth, thumbnailMapWidth / self.maxThumbnailNr, percentagePos);
 		var xPosition = self.getXPositionByDefaultThumbnailNr(curPx);
 		self.setDivBackgroundByPosX(this, xPosition);
-<<<<<<< HEAD
 
 		// SAM: set to time
 		var parentClass = divElem.className.split(' ')[1];
@@ -94,15 +90,6 @@ VideoThumbnail.prototype.setOnMouseMoveListenerByDivElement = function (divElem,
 		anchor.dataset.jumpto = "?t=" + seconds;
 		seconds = new Date(seconds * 1000).toISOString().substr(11, 8);
 		time.innerHTML = seconds;
-=======
-		var parentClass = divElem.className.split(' ')[1];
-		parentClass = ".yt-cell-thumb." + parentClass;
-		console.log(parentClass + ' > .time');
-		var time = $(parentClass + ' > .time')[0];
-		// var samtime = document.getElementsByClassName(parentClass).getElementsByClassName("time");
-		time.innerHTML = "cow";
-		// console.log(divElem.className.split(' ')[1]);
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 	};
 };
 
@@ -112,15 +99,12 @@ VideoThumbnail.prototype.setOnMouseOutListenerByDivElement = function (divElem, 
 		var defaultThumbnailNr = this.dataset.hasOwnProperty(self.defaultThumbNrName) ? this.dataset.defaultimgnr : 0;
 		var xPosition = self.getXPositionByDefaultThumbnailNr(defaultThumbnailNr);
 		self.setDivBackgroundByPosX(this, xPosition);
-<<<<<<< HEAD
 
 		// SAM: remove time
 		var parentClass = divElem.className.split(' ')[1];
 		parentClass = ".yt-cell-thumb." + parentClass;
 		var time = $(parentClass + ' > .time')[0];
 		time.innerHTML = "";
-=======
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 	};
 };
 
@@ -147,14 +131,8 @@ VideoThumbnail.prototype.displayThumbs = function () {
         var self = this;
         var divItem = this.thumbnailDivList[i];
         this.getThumbnailMapWidthByDivElement(divItem, defaultThumbnailNr, function(imageWidth, divElem, defaultThumbNr) {
-<<<<<<< HEAD
 
 			// SAM: my ratio
-=======
-			// console.log("gobochucki: " + divElem);
-
-			// SAMS RATIO
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 			var newHeight = 240 * (180 / (imageWidth/100));
 			// divElem.style.border = '1px solid red';
 			divElem.style.height = newHeight + 'px';

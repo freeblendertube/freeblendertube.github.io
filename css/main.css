@@ -104,11 +104,7 @@ body { background-color: #eff3f3; }
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure { margin-bottom: 15px; }
 
-<<<<<<< HEAD
 body { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace; }
-=======
-body { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; }
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 
 ul { list-style-type: none; padding: 0px 20px; }
 
@@ -116,25 +112,16 @@ ul li { padding: 1px; }
 
 .wrapper { min-width: 220px; max-width: 884px; margin-left: auto; margin-right: auto; /*padding-left:20px; padding-right:20px;*/ padding-left: 13px; padding-right: 13px; }
 
-<<<<<<< HEAD
 .header { margin: 10px 0px 0px 0px; min-width: 220px; max-width: 884px; padding: 8px; border-radius: 5px 5px 0px 0px; background-color: rgba(162, 62, 72, 0.8); border-right: 4px inset rgba(162, 62, 72, 0.8); border-top-left-radius: 10px 10px; border-top-right-radius: 10px 10px; border-bottom-left-radius: 3px 3px; border-bottom-right-radius: 3px 3px; box-shadow: 4px 1px 6px 1px #888888; }
 
 .logo-blendertube { margin: 0px auto 0px auto; width: 240px; line-height: 80px; }
 
 .logo-blendertube > a { -webkit-text-fill-color: #a23e48; font-family: "Squada One", sans-serif; font-weight: bolder; font-size: 80px; }
-=======
-.header { margin: 10px 0px 10px 0px; min-width: 220px; max-width: 884px; border-radius: 5px 5px 5px 5px; background-color: rgba(162, 62, 72, 0.8); border: 2px outset #552a2b; }
-
-.logo-blendertube { margin: 0px auto 0px auto; width: 240px; line-height: 80px; }
-
-.logo-blendertube > a { -webkit-text-fill-color: #a23e48; -webkit-text-stroke-width: .1px; -webkit-text-stroke-color: rgba(0, 0, 0, 0.4); font-family: "Squada One", sans-serif; font-weight: bolder; font-size: 80px; }
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 
 .logo-blendertube > a:hover { text-decoration: none; }
 
 .logo-blendertube > a > span { color: #000000; -webkit-text-fill-color: #000000; -webkit-text-stroke-width: 0px; position: absolute; margin-top: 34px; margin-left: -80px; font-family: "Gloria Hallelujah"; font-weight: 400; font-size: 38px; opacity: .8; text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.4); z-index: 1; }
 
-<<<<<<< HEAD
 .nav-link { margin: 0px auto 5px auto; }
 
 .nav-link.videos { width: 150px; text-align: center; }
@@ -166,21 +153,6 @@ ul li { padding: 1px; }
 div.date-style { display: inline-block; }
 
 div.date-style > span { font-size: 20px; }
-=======
-.nav-link { margin: 0px auto 2px auto; width: 220px; background-color: rgba(108, 142, 173, 0.8); border: 2px outset #6c8ead; text-align: center; font-size: 20px; }
-
-.nav-link > a { font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace; color: #000000; text-decoration: none; }
-
-.nav-link > a:hover { font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace; color: #000000; text-decoration: underline; }
-
-.flexContainer { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- */ display: -ms-flexbox; /* Chrome */ display: -webkit-flex; /* IE 10 */ display: flex; /* brings up issues with flexitem having greater width of flexbox, and spaning outside of it. */ /* try nowrap or wrap */ -webkit-flex-flow: row wrap; flex-flow: row wrap; justify-content: center; width: 100%; max-width: 884px; }
-
-.blogItem { overflow: hidden; width: 100%; margin-top: 4px; border: 0px none #101010; border-bottom: 0px solid rgba(180, 180, 180, 0.7); /*padding: 10px;*/ /* background-color: #E0E5E5; */ }
-
-.item-header { padding: 4px; background-color: rgba(0, 0, 0, 0.1); border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-
-.title-style { text-align: left; line-height: 20px; display: inline-block; max-width: 480px; }
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 
 div.video-creator { display: inline-block; }
 
@@ -194,17 +166,9 @@ li.creator-style > span > a { color: #000000; text-decoration: none; }
 
 li.creator-style > span > a:hover { color: #000000; text-decoration: underline; }
 
-<<<<<<< HEAD
 .yt-item { background-color: #dcedFF; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-top: 4px; border-right: 4px inset rgba(0, 0, 0, 0.1); }
 
 .yt-table { margin: 0px auto 0px auto; /* margin:5px; */ vertical-align: middle; }
-=======
-.date-style { float: right; display: block; text-align: right; line-height: 20px; height: 19px; }
-
-.yt-item { background-color: #dcedFF; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); width: 100%; height: 192px; padding-top: 4px; }
-
-.yt-table { margin: 0px auto 0px auto; height: 180px; /* margin:5px; */ vertical-align: middle; }
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 
 .yt-cell:first-child { border-bottom: 2px ridge #9ac67d; background-color: #8cae68; width: 80%; }
 
@@ -212,23 +176,15 @@ li.creator-style > span > a:hover { color: #000000; text-decoration: underline; 
 
 .yt-cell-thumb { border-bottom: 2px ridge #9ac67d; background-color: #8cae68; }
 
-<<<<<<< HEAD
 .yt-cell-thumb a { display: flex; float: left; margin: auto; width: 240px; }
-=======
-.yt-cell-thumb a { display: flex; float: left; margin: auto; height: 180px; width: 240px; }
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 
 .yt-cell-thumb a:link, .yt-cell-thumb a:visited, .yt-cell-thumb a:hover, .yt-cell-thumb a:focus { text-decoration: none; }
 
 .yt-cell-thumb a div { margin: auto; max-width: 100%; max-height: 100%; }
 
-<<<<<<< HEAD
 .time { display: inline-block; }
 
 /* .this-is-spartaaa { border: 1px solid red; margin: auto; max-width: 100%; max-height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; } .yt-real-thumb { margin: auto; max-width: 100%; max-height: 100%; } */
-=======
-/*.yt-cell-thumb { border-bottom: 2px ridge rgba(154, 198, 125, 1); background-color: #8cae68; div { margin: auto; display: flex; height: 180px; width: 240px; float: left; img { margin: auto; max-width: 100%; max-height: 100%; } } }*/
->>>>>>> 7a5834743f3a6df5eb67b3d08bc595aec3da63f8
 .yt-cell-me { border-bottom: 2px ridge #9ac67d; background-color: #8cae68; }
 
 .yt-cell-me div { margin: auto; height: 180px; width: 240px; float: left; }
