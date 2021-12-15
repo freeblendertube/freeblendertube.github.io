@@ -1,0 +1,15 @@
+I"Ã<p><code>Pertinent Information:</code></p>
+
+<p>(obtained from the Jayanamâ€™s video description)</p>
+
+<p>PBR texturing with Blender 2.9</p>
+
+<p>For the textures, Jayanam makes use of Albedo / Base Color, a normal map and a roughness map for a brick wall.</p>
+
+<p>The textures are free and can be found here:
+<a href="https://www.textures.com/download/pbr0071/133106">https://www.textures.com/download/pbr0071/133106</a></p>
+
+<p>Jayanam shows you how to use texture slots in the texture paint mode to create the node setup with the principled shader, that can be used for Blender eevee and cycles.</p>
+
+<p>After that Jayanam explains a new feature of Blender 2.9: Correct face attributes for UV mapping.</p>
+:ET
