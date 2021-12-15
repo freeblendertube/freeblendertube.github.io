@@ -64,7 +64,7 @@
 
 
 <div class="flexContainer">
-
+    
     
 
     
@@ -94,15 +94,19 @@
 
     </div>
 </div>
-    <div id="hyvor-talk-view"></div>
-    <script type="text/javascript">
-        var HYVOR_TALK_WEBSITE = 2727; // DO NOT CHANGE THIS
-        var HYVOR_TALK_CONFIG = {
-            url: 'https://blendertube.com/blog/blender-level-designing-and-exporting-to-unity3d/',
-            id: '/blog/blender-level-designing-and-exporting-to-unity3d'
-        };
-    </script>
-    <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+
+<div id='discourse-comments'></div>
+
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'https://forum.blendertube.com/',
+                     discourseEmbedUrl: 'https://blendertube.com/blog/blender-level-designing-and-exporting-to-unity3d/' };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
 
 <div class="footer">© 2018 blendertube.com, Inc. or its affiliates</div>
 </div>
