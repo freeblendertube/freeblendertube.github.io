@@ -2,7 +2,7 @@
 {% include body.html %}
 
 <div class="flexContainer">
-http://blendertube.com{{page.url}}/index.html
+http://blendertube.com{{page.url}}index.html
     {% assign creator = page.video_creator | remove: " " | downcase %}
 
     {% capture thumb_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{page.video_id | append: "-thumb.jpg"}}{% endcapture %}
@@ -39,7 +39,7 @@ http://blendertube.com{{page.url}}/index.html
 
 <script type="text/javascript">
   DiscourseEmbed = { discourseUrl: 'https://forum.blendertube.com/',
-                     discourseEmbedUrl: 'http://blendertube.com{{page.url}}/index.html' };
+                     discourseEmbedUrl: 'http://blendertube.com{{page.url}}index.html' };
 
   (function() {
     var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
