@@ -16,8 +16,8 @@ pagination:
 #   - jekyll-feed
 #   - jemoji
 
-name: "sizeoverload"
-description: "sizeoverload"
+name: "blendertube"
+description: "links to vetted, fantastic blender tutorials "
 
 safe:        false
 watch:       false    # deprecated
