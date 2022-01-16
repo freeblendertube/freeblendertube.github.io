@@ -104,49 +104,57 @@ body { background-color: #eff3f3; }
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure { margin-bottom: 15px; }
 
-body { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace; }
+body { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace; background-color: #010101; }
+
+a { text-decoration: none; color: #0383c9; }
+
+a:hover { text-decoration: underline; color: #f5a2c6; }
 
 ul { list-style-type: none; padding: 0px 20px; }
 
 ul li { padding: 1px; }
 
-.wrapper { min-width: 220px; max-width: 884px; margin-left: auto; margin-right: auto; /*padding-left:20px; padding-right:20px;*/ padding-left: 13px; padding-right: 13px; }
+.wrapper { min-width: 220px; max-width: 884px; margin-left: auto; margin-right: auto; /*padding-left:20px; padding-right:20px;*/ padding-left: 13px; padding-right: 13px; color: #999; }
 
-.header { margin: 10px 0px 0px 0px; min-width: 220px; max-width: 884px; padding: 8px; border-radius: 5px 5px 0px 0px; background-color: rgba(162, 62, 72, 0.8); border-right: 4px inset rgba(162, 62, 72, 0.8); border-top-left-radius: 10px 10px; border-top-right-radius: 10px 10px; border-bottom-left-radius: 3px 3px; border-bottom-right-radius: 3px 3px; box-shadow: 4px 1px 6px 1px #888888; }
+.header { margin: 10px 0px 10px 0px; min-width: 220px; max-width: 884px; height: 200px; margin-left: auto; margin-right: auto; padding: 8px; border-radius: 5px 5px 0px 0px; background-color: #ee9131; border-right: 4px inset rgba(162, 62, 72, 0.5); border-top-left-radius: 10px 10px; border-top-right-radius: 10px 10px; border-bottom-left-radius: 3px 3px; border-bottom-right-radius: 3px 3px; box-shadow: 0 0 1px #fff inset; }
 
-.logo-blendertube { margin: 0px auto 0px auto; width: 240px; line-height: 80px; }
+.logo-blendertube { margin: -12px auto 0px auto; width: 330px; }
 
-.logo-blendertube > a { -webkit-text-fill-color: #a23e48; font-family: "Squada One", sans-serif; font-weight: bolder; font-size: 80px; }
+.logo-blendertube > a { -webkit-text-fill-color: #e4770c; font-family: "Squada One", sans-serif; font-weight: bolder; font-size: 110px; letter-spacing: .01em; text-shadow: 0.1px 0.5px 4px #fff, 0px 1px 0px #eba45f, 0px 2px 2px #ee9131, 0px 3px 3px #e4770c, 0px 4px 4px #ee9131, 0px 5px 5px #eba45f; }
 
 .logo-blendertube > a:hover { text-decoration: none; }
 
-.logo-blendertube > a > span { color: #000000; -webkit-text-fill-color: #000000; -webkit-text-stroke-width: 0px; position: absolute; margin-top: 34px; margin-left: -80px; font-family: "Gloria Hallelujah"; font-weight: 400; font-size: 38px; opacity: .8; text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.4); z-index: 1; }
+.logo-blendertube > a > span { color: #000000; -webkit-text-fill-color: #000000; -webkit-text-stroke-width: 0px; font-family: "Gloria Hallelujah"; font-weight: 400; font-size: 28px; opacity: .8; text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.4); z-index: 1; }
 
-.nav-link { margin: 0px auto 5px auto; }
+.menu > a { display: block; text-align: center; width: 100%; height: 100%; color: rgba(0, 0, 0, 0.8); border-radius: 25px; background-color: rgba(108, 142, 173, 0.8); border: 2px outset #6c8ead; font-family: "Squada One", sans-serif; opacity: .8; text-decoration: none; }
 
-.nav-link.videos { width: 150px; text-align: center; }
+.menu > a:hover { color: black; font-family: "Squada One", sans-serif; text-decoration: none; }
 
-.nav-link.videos > a { color: rgba(0, 0, 0, 0.8); border-radius: 25px; background-color: rgba(108, 142, 173, 0.8); border: 2px outset #6c8ead; font-family: "Squada One", sans-serif; font-size: 28px; opacity: .8; text-decoration: none; }
+.navAllVideos { grid-area: allvideos; font-size: 24px; line-height: 1; }
 
-.nav-link.videos > a:hover { color: black; font-family: "Squada One", sans-serif; text-decoration: none; }
+.navCreators { grid-area: creators; font-size: 24px; line-height: 1; }
 
-.nav-link.creators { width: 150px; text-align: center; }
+.navTimelapse { grid-area: timelapse; font-size: 18px; line-height: 1.4; }
 
-.nav-link.creators > a { color: rgba(0, 0, 0, 0.8); border-radius: 25px; background-color: rgba(108, 142, 173, 0.8); border: 2px outset #6c8ead; font-family: "Squada One", sans-serif; font-size: 28px; opacity: .8; text-decoration: none; }
+.navTutorial { grid-area: tutorial; font-size: 18px; line-height: 1.4; }
 
-.nav-link.creators > a:hover { color: black; font-family: "Squada One", sans-serif; text-decoration: none; }
+.nav2D { grid-area: twd; font-size: 18px; line-height: 1.4; }
 
-.nav-link.about { width: 150px; text-align: center; }
+.nav3D { grid-area: thd; font-size: 18px; line-height: 1.4; }
 
-.nav-link.about > a { color: rgba(0, 0, 0, 0.8); border-radius: 25px; background-color: rgba(108, 142, 173, 0.8); border: 2px outset #6c8ead; font-family: "Squada One", sans-serif; font-size: 28px; opacity: .8; text-decoration: none; }
+.navGreasePencil { grid-area: gp; font-size: 16px; line-height: .8; }
 
-.nav-link.about > a:hover { color: black; font-family: "Squada One", sans-serif; text-decoration: none; }
+.navGreasePencil span { white-space: pre-line; }
 
-.flexContainer { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- */ display: -ms-flexbox; /* Chrome */ display: -webkit-flex; /* IE 10 */ display: flex; /* brings up issues with flexitem having greater width of flexbox, and spaning outside of it. */ /* try nowrap or wrap */ -webkit-flex-flow: row wrap; flex-flow: row wrap; justify-content: center; width: 100%; max-width: 884px; box-shadow: 4px 1px 6px 1px #888888; }
+.navAbout { grid-area: about; font-size: 24px; line-height: 1; }
 
-.blogItem { overflow: hidden; width: 100%; /*padding: 10px;*/ /* background-color: #E0E5E5; */ }
+.navSupport { grid-area: support; font-size: 24px; line-height: 1; }
 
-.item-header { background-color: rgba(0, 0, 0, 0.1); padding: 3px 4px 0px 4px; border-right: 4px groove rgba(0, 0, 0, 0.1); }
+.grid { display: grid; gap: 4px; grid-template: [rowspace-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px [rowspace-end] [row1-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px "allvideos . . timelapse timelapse timelapse timelapse timelapse timelapse . . . about" 5px "allvideos . . . . . . . . . . . about" 1px [row1-end] [rowspace-start] "allvideos . . tutorial tutorial tutorial tutorial tutorial tutorial . . . about" 10px [rowspace-end] [row2-start] ". . . tutorial tutorial tutorial tutorial tutorial tutorial . . . ." 1px "creators . . tutorial tutorial tutorial tutorial tutorial tutorial . . . support" 5px "creators . . . . . . . . . . . support" 2px [row2-end] [rowspace-start] "creators . twd twd . thd thd . gp gp gp . support" 10px [rowspace-end] [row3-start] ". . twd twd . thd thd . gp gp gp . ." 6px [row3-end] [row3-start] ". . twd twd . thd thd . gp gp gp . ." 1px [row3-end]/120px auto 16px 16px 1px 16px 16px 1px 60px 1px 16px auto 120px; width: 100%; max-width: 884px; justify-content: center; }
+
+.flex { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- */ display: -ms-flexbox; /* Chrome */ display: -webkit-flex; /* IE 10 */ display: flex; /* brings up issues with item having greater width of flexbox, and spaning outside of it. */ /* try nowrap or wrap */ -webkit-flex-flow: row wrap; flex-flow: row wrap; justify-content: center; width: 100%; max-width: 884px; margin-top: -3px; }
+
+.item { overflow: hidden; width: 100%; /*padding: 10px;*/ /* background-color: #E0E5E5; */ }
 
 .title-style { text-align: left; line-height: 20px; display: inline-block; }
 
@@ -154,44 +162,52 @@ div.date-style { display: inline-block; }
 
 div.date-style > span { font-size: 20px; }
 
-div.video-creator { display: inline-block; }
+div.video-creator { display: inline-block; color: #FFF; }
 
-div.video-creator > span { font-size: 20px; }
+div.video-creator > span { color: #999; font-size: 20px; }
 
 li.creator-style { display: block; }
 
 li.creator-style > span { font-size: 20px; }
 
-li.creator-style > span > a { color: #000000; text-decoration: none; }
+li.creator-style > span > a { color: #999; text-decoration: none; }
 
-li.creator-style > span > a:hover { color: #000000; text-decoration: underline; }
+li.creator-style > span > a:hover { color: #999; text-decoration: underline; }
 
-.yt-item { background-color: #dcedFF; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-top: 4px; border-right: 4px inset rgba(0, 0, 0, 0.1); }
+.yt-item { background-color: black; padding-bottom: 4px; }
 
-.yt-table { margin: 0px auto 0px auto; /* margin:5px; */ vertical-align: middle; }
+.yt-table { /* margin:5px; */ table-layout: fixed; vertical-align: middle; border-collapse: collapse; }
 
-.yt-cell:first-child { border-bottom: 2px ridge #9ac67d; background-color: #8cae68; width: 80%; }
+.plate { width: 190px; height: 80%; background-color: #552a2b; margin-left: auto; margin-right: auto; }
 
-.yt-cell { border-bottom: 2px ridge #9ac67d; background-color: #8cae68; }
+.tooltip { position: relative; display: inline-block; border-bottom: 1px dotted black; /* If you want dots under the hoverable text */ }
 
-.yt-cell-thumb { border-bottom: 2px ridge #9ac67d; background-color: #8cae68; }
+/* Tooltip text */
+.tooltip .tooltiptext { visibility: hidden; width: 120px; background-color: black; color: #fff; text-align: center; padding: 5px 0; border-radius: 6px; /* Position the tooltip text - see examples below! */ position: absolute; z-index: 1; }
 
-.yt-cell-thumb a { display: flex; float: left; margin: auto; width: 240px; }
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext { visibility: visible; }
+
+.yt-cell-thumb { padding: 8px; background-color: rgba(162, 62, 72, 0.5); display: table-cell; vertical-align: middle; }
+
+.yt-cell-thumb a { display: block; width: 640px; height: 360px; }
 
 .yt-cell-thumb a:link, .yt-cell-thumb a:visited, .yt-cell-thumb a:hover, .yt-cell-thumb a:focus { text-decoration: none; }
 
 .yt-cell-thumb a div { margin: auto; max-width: 100%; max-height: 100%; }
 
-.time { display: inline-block; }
+.yt-cell { background-color: rgba(162, 62, 72, 0.5); }
+
+.yt-cell:nth-child(3) { width: auto; }
+
+.yt-cell:nth-child(4) { width: 100%; }
+
+.time { pointer-events: none; position: relative; display: block; text-align: center; bottom: 20px; background-color: rgba(192, 192, 192, 0.25); }
 
 /* .this-is-spartaaa { border: 1px solid red; margin: auto; max-width: 100%; max-height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; } .yt-real-thumb { margin: auto; max-width: 100%; max-height: 100%; } */
 .yt-cell-me { border-bottom: 2px ridge #9ac67d; background-color: #8cae68; }
 
 .yt-cell-me div { margin: auto; height: 180px; width: 240px; float: left; }
-
-a { text-decoration: none; color: #0383c9; }
-
-a:hover { text-decoration: underline; color: #f5a2c6; }
 
 .bullet { display: block; float: right; /*background:rgba(210, 0, 100, .1);*/ color: black; text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.2); /*height:12px; line-height:4px;*/ /*    text-shadow: 3px 2px 0px rgba(180, 180, 180, .22);*/ padding: 2px 0px 1px 0px; margin-top: 5px; font-size: 20px; }
 
@@ -199,14 +215,6 @@ a:hover { text-decoration: underline; color: #f5a2c6; }
 
 .footer { width: 100%; color: #999; font-size: 15px; text-align: center; border-top: 1px solid black; padding: 10px 0 30px; }
 
-@media all and (max-width: 720px) { /* // carried over from previous website... .flexContainer { -webkit-flex-flow: column nowrap; justify-content:center; } .blogItem { align-self:center; width:100%; } */ .title-style { max-width: 240px; } }
-
-.dark-red { display: inline-block; }
-
-.dark-red > span { font-size: 20px; font-family: 'Roboto Slab', serif; background: -moz-linear-gradient(45deg, #4d0000 0%, red 50%, #4d0000 100%); /* ff3.6+ */ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #4d0000), color-stop(50%, red), color-stop(100%, #4d0000)); /* safari4+,chrome */ background: -webkit-linear-gradient(45deg, #4d0000 0%, red 50%, #4d0000 100%); /* safari5.1+,chrome10+ */ background: -o-linear-gradient(45deg, #4d0000 0%, red 50%, #4d0000 100%); /* opera 11.10+ */ background: -ms-linear-gradient(45deg, #4d0000 0%, red 50%, #4d0000 100%); /* ie10+ */ background: linear-gradient(45deg, #4d0000 0%, red 50%, #4d0000 100%); /* w3c */ -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-
-.rainbow-fill { display: inline-block; }
-
-.rainbow-fill > span { font-size: 20px; font-family: "Arial Black", Gadget, sans-serif; background: -webkit-linear-gradient(left, orange, yellow, cyan, violet); /* For Safari 5.1 to 6.0 */ background: -o-linear-gradient(right, orange, yellow, cyan, violet); /* For Opera 11.1 to 12.0 */ background: -moz-linear-gradient(right, orange, yellow, cyan, violet); /* For Firefox 3.6 to 15 */ background: linear-gradient(to right, orange, yellow, cyan, violet); /* Standard syntax (must be last) */ -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+@media all and (max-width: 720px) { /* // carried over from previous website... .flex { -webkit-flex-flow: column nowrap; justify-content:center; } .item { align-self:center; width:100%; } */ .title-style { max-width: 240px; } }
 
 /*# sourceMappingURL=main.css.map */
