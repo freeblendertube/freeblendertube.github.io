@@ -1,17 +1,16 @@
 ---
 title: Blog - sizeoverload
-layout: allposts
+layout: allblogposts
 pagination:
   enabled: true
 ---
-<div class="flexContainer">
+<div class="flex">
     {% for post in site.categories['blog'] %}
-
     {% assign creator = post.video_creator | remove: " " | downcase %}
-
     {% capture thumb_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{post.video_id | append: "-thumb.jpg"}}{% endcapture %}
     {% capture preview_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{post.video_id | append: "-preview.jpg"}}{% endcapture %}
-    <div class="blogItem"> <!-- eventually use <a style="display:block"> -->
+
+    <div class="item"> <!-- eventually use <a style="display:block"> -->
         <div class="item-header">
             <span class="title-style"><a href="{{post.url}}">{{post.video_title}}</a></span>
             <span class="date-style">{{ post.date | date: "%b " }}{{ post.date | date: "%-d" }}{{ post.date | date: ", %Y" }}</span>
@@ -22,14 +21,19 @@ pagination:
                 <tr class="yt-row">
                     <td class="yt-cell"><i>by</i> <div class="video-creator"><span>{{post.video_creator}}</span></div></td>
 
-                    <td class="yt-cell-thumb {{post.video_id}}">
-                        <a href="#" data-original="{{post.video_url}}" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-                            <div class="this-is-spartaaa {{post.video_id}}" data-defaultimgnr="1" data-img="{{preview_file}}" data-time="{{post.video_length}}" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="{{thumb_file}}"> -->
-                        </a>
-                        <span class="time"></span>
+                    <td class="yt-cell-thumb {{post.video_id}}">
+                        <div class="scrub-box">
+                            <a href="#" data-original="{{post.video_url}}" data-jumpto="" rel="noopener noreferrer" target="_blank">
+
+                                <!-- videobox sprite-box scrubber -->
+
+                                <div class="this-is-spartaaa {{post.video_id}}" data-defaultimgnr="1" data-img="{{preview_file}}" data-time="{{post.video_length}}" data-jumpto=""></div>
+                                <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                                <!-- <img class="yt-real-thumb" src="{{thumb_file}}"> -->
+                            </a>
+                            <span class="time"></span>
+                        </div>
                     </td>
                 </tr>
             </table>

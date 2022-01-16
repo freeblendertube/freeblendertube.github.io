@@ -13,6 +13,7 @@ $coral-red: rgba(255, 60, 56, 1);
 
 $smokey-topaz-stroke: rgba(85, 42, 43, 1);
 $smokey-topaz-platform: rgba(162, 62, 72, .8);
+$smokey-topaz-platform-dull: rgba(162, 62, 72, .5);
 $smokey-topaz: rgba(162, 62, 72, 1);
 
 $shadow-blue-platform: rgba(108, 142, 173, .8);
@@ -52,5 +53,4 @@ $yt-blog-item: 1;
 @import
         "fonts",
         "base",
-        "samstyle",
-        "rainbowstyle";
+        "samstyle";

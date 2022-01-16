@@ -1,10 +1,10 @@
 ---
 title: Pics and visuals - sizeoverload
-layout: allposts
+layout: allblogposts
 video_creator: "Zacharias Reinhardt"
 ---
 <h3>{{page.video_creator}}</h3>
-<div class="flexContainer">
+<div class="flex">
 
     {% assign creator = page.video_creator | remove: " " | downcase %}
     {% for post in site.categories['blog'] %}
@@ -13,7 +13,7 @@ video_creator: "Zacharias Reinhardt"
 
     {% capture thumb_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{post.video_id | append: "-thumb.jpg"}}{% endcapture %}
     {% capture preview_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{post.video_id | append: "-preview.jpg"}}{% endcapture %}
-    <div class="blogItem"> <!-- eventually use <a style="display:block"> -->
+    <div class="item"> <!-- eventually use <a style="display:block"> -->
         <div class="item-header">
             <span class="title-style">{{post.video_title}}</span>
             <span class="date-style">{{ post.date | date: "%b " }}{{ post.date | date: "%-d" }}{{ post.date | date: ", %Y" }}</span>

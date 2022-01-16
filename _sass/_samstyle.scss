@@ -4,6 +4,18 @@ body {
     padding-left:0px;
     padding-right:0px;
     font-family: $font_family_consolas;
+
+    background-color: rgba(1,1,1,1);
+}
+
+a {
+    text-decoration:none;
+    color:#0383c9;
+}
+
+a:hover {
+    text-decoration:underline;
+    color: #f5a2c6;
 }
 
 ul {
@@ -14,6 +26,7 @@ ul {
     }
 }
 
+
 .wrapper {
     min-width:220px;
     max-width: 884px;
@@ -23,26 +36,30 @@ ul {
     padding-right:20px;*/
     padding-left:13px;
     padding-right:13px;
+
+    color: #999;
 }
 
 .header {
-    margin:10px 0px 0px 0px;
+    margin:10px 0px 10px 0px;
     min-width:220px;
     max-width:884px;
-
+    height:200px;
+margin-left: auto;
+margin-right:auto;
     padding: 8px;
 
     border-radius: 5px 5px 0px 0px;
 
-    background-color: $smokey-topaz-platform;
+    // $smokey-topaz-platform;
+    background-color: $blender-orange2;
 
     // border-top: 2px outset $smokey-topaz-platform;
     // border-right: 4px inset $smokey-topaz-stroke;
 
-    border-right: 4px inset $smokey-topaz-platform;
+    border-right: 4px inset $smokey-topaz-platform-dull;
 
     // border-bottom: 2px outset white;
-
 
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
@@ -51,26 +68,35 @@ ul {
 
     // border-style: outset;
 
-    box-shadow: 4px 1px 6px 1px #888888;
+     box-shadow: 0 0 1px #fff inset;
 
     // border-top: 1px solid rgba(0, 0, 0, 0.1);
     // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .logo-blendertube {
-    margin: 0px auto 0px auto;
-    width:240px;
-    line-height: 80px;
+
+    margin: -12px auto 0px auto;
+    width:330px;
+    // line-height: 80px;
     // background-color: $shadow-blue-platform;
     // border: 2px outset $shadow-blue;
     > a {
-        -webkit-text-fill-color: $smokey-topaz;
+        -webkit-text-fill-color: $blender-orange1;
         // -webkit-text-stroke-width: .1px;
         // -webkit-text-stroke-color: rgba(0, 0, 0, .4);
         font-family: $title-secondary-font-family;
         font-weight: bolder;
-        font-size: 80px;
+        font-size: 110px;
         // cursor: default;
+            letter-spacing: .01em;
+    text-shadow:
+      .1px .5px 4px #fff,
+      0px 1px 0px $blender-orange3,
+      0px 2px 2px $blender-orange2,
+      0px 3px 3px $blender-orange1,
+      0px 4px 4px $blender-orange2,
+      0px 5px 5px $blender-orange3;
         &:hover {
             text-decoration: none;
         }
@@ -83,26 +109,30 @@ ul {
             color: #000000;
             -webkit-text-fill-color: #000000;
             -webkit-text-stroke-width: 0px;
-            position:absolute;
-            margin-top:34px;
-            margin-left:-80px;
+            // position:absolute;
+            // margin-top: 60px;
+            // margin-left: -320px;
             font-family: $title-font-family;
             font-weight: 400;
-            font-size: 38px;
+            font-size: 28px;
             opacity:.8;
+            // line-height:8px;
             text-shadow: 1px 3px 0px rgba(0, 0, 0, .4);
             z-index: 1;
         }
     }
 }
-.nav-link {
-    margin: 0px auto 5px auto;
-}
-.nav-link.videos {
-    width: 150px;
 
-    text-align:center;
+// SAM: Are any features by changing and renaming classes? why did I originally have separate classes for links?
+.grid {
+
+}
+.menu {
     > a {
+        display:block;
+        text-align: center;
+        width:100%;
+        height:100%;
         color: rgba(0, 0, 0, .8);
         border-radius: 25px;
         background-color: $shadow-blue-platform;
@@ -111,7 +141,7 @@ ul {
 
         // font-weight: bolder;
 
-        font-size: 28px;
+        // font-size: 28px;
         opacity:.8;
         // text-shadow: 1px 3px 0px rgba(0, 0, 0, .2);
 
@@ -127,71 +157,90 @@ ul {
     }
 }
 
-.nav-link.creators {
-    width: 150px;
-
-    text-align:center;
-    > a {
-        color: rgba(0, 0, 0, .8);
-        border-radius: 25px;
-        background-color: $shadow-blue-platform;
-        border: 2px outset $shadow-blue;
-        font-family: $title-secondary-font-family;
-
-        // font-weight: bolder;
-
-        font-size: 28px;
-        opacity:.8;
-        // text-shadow: 1px 3px 0px rgba(0, 0, 0, .2);
-
-        text-decoration: none;
-        &:hover {
-            // display: inline-block;
-            // text-align: center;
-            // width: 60px;
-            color: rgba(0, 0, 0, 1);
-            font-family: $title-secondary-font-family;
-            text-decoration: none;
-        }
-    }
+.navAllVideos {
+    grid-area: allvideos;
+    font-size: 24px;
+    line-height: 1;
 }
 
-.nav-link.about {
-    width: 150px;
-
-    text-align:center;
-    > a {
-        color: rgba(0, 0, 0, .8);
-        border-radius: 25px;
-        background-color: $shadow-blue-platform;
-        border: 2px outset $shadow-blue;
-        font-family: $title-secondary-font-family;
-
-        // font-weight: bolder;
-
-        font-size: 28px;
-        opacity:.8;
-        // text-shadow: 1px 3px 0px rgba(0, 0, 0, .2);
-
-        text-decoration: none;
-        &:hover {
-            // display: inline-block;
-            // text-align: center;
-            // width: 60px;
-            color: rgba(0, 0, 0, 1);
-            font-family: $title-secondary-font-family;
-            text-decoration: none;
-        }
+.navCreators {
+    grid-area: creators;
+    font-size: 24px;
+    line-height: 1;
+}
+.navTimelapse {
+    grid-area: timelapse;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.navTutorial {
+    grid-area: tutorial;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.nav2D {
+    grid-area: twd;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.nav3D {
+    grid-area: thd;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.navGreasePencil {
+    grid-area: gp;
+    font-size: 16px;
+    line-height: .8;
+    span {
+        white-space: pre-line;
     }
+}
+.navAbout {
+    grid-area: about;
+    font-size: 24px;
+    line-height: 1;
+}
+.navSupport {
+    grid-area: support;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.grid {
+    display: grid;
+    gap: 4px;
+  // SAM: redo this
+  // https://css-tricks.com/snippets/css/complete-guide-grid/#introduction
+      // Since grid-template doesn’t reset the implicit grid properties (grid-auto-columns,
+      // grid-auto-rows, and grid-auto flow), which is probably what you want to do in most cases,
+      // it’s recommended to use the grid property instead of grid-template.
+  grid-template:
+    [rowspace-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px [rowspace-end]
+    [row1-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px
+                 "allvideos . . timelapse timelapse timelapse timelapse timelapse timelapse . . . about" 5px
+                 "allvideos . . . . . . . . . . . about" 1px [row1-end]
+    [rowspace-start] "allvideos . . tutorial tutorial tutorial tutorial tutorial tutorial . . . about" 10px [rowspace-end]
+    [row2-start] ". . . tutorial tutorial tutorial tutorial tutorial tutorial . . . ." 1px
+                 "creators . . tutorial tutorial tutorial tutorial tutorial tutorial . . . support" 5px
+                 "creators . . . . . . . . . . . support" 2px [row2-end]
+    [rowspace-start] "creators . twd twd . thd thd . gp gp gp . support" 10px [rowspace-end]
+    [row3-start] ". . twd twd . thd thd . gp gp gp . ." 6px [row3-end]
+    [row3-start] ". . twd twd . thd thd . gp gp gp . ." 1px [row3-end]
+    / 120px auto 16px 16px 1px 16px 16px 1px 60px 1px 16px auto 120px;
+
+    width:100%;
+    max-width:884px;
+    justify-content:center;
 }
 
 // styling of tags found in index.html
-.flexContainer {
+.flex {
     display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;  /* OLD - Firefox 19- */
     display: -ms-flexbox;  /* Chrome */
     display: -webkit-flex; /* IE 10 */
-    display: flex; /* brings up issues with flexitem having greater width of flexbox, and spaning outside of it. */
+    display: flex; /* brings up issues with item having greater width of flexbox, and spaning outside of it. */
 
     /* try nowrap or wrap */
     -webkit-flex-flow: row wrap;
@@ -201,12 +250,12 @@ ul {
     width:100%;
     max-width:884px;
 
-    // margin-top: -3px;
+    margin-top: -3px;
 
-    box-shadow: 4px 1px 6px 1px #888888;
+    // box-shadow: 4px 1px 6px 1px #888888;
 }
 
-.blogItem {
+.item {
     overflow:hidden;
     width:100%;
 
@@ -226,15 +275,6 @@ ul {
     // border-bottom:0px solid rgba(180, 180, 180, .7);
     /*padding: 10px;*/
     /* background-color: #E0E5E5; */
-}
-
-.item-header {
-        background-color:rgba(0, 0, 0, .1);
-        // border-bottom:1px inset rgba(0, 0, 0, .1);
-        padding: 3px 4px 0px 4px;
-        border-right: 4px groove rgba(0, 0, 0, .1);
-    // border-top: 1px solid rgba(0, 0, 0, .1);
-    // border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .title-style {
@@ -258,7 +298,11 @@ div.date-style {
 }
 div.video-creator {
     display:inline-block;
+    color: #FFF;
     > span {
+        // #666666
+        // #6e6e6e
+        color: #999;
         font-size: 20px;
         // font-family: $alpaca_scarlett_demo;
     }
@@ -270,10 +314,10 @@ li.creator-style {
         font-size: 20px;
         // font-family: $alpaca_scarlett_demo;
         > a {
-            color: #000000;
+            color: #999;
             text-decoration: none;
             &:hover {
-                color: #000000;
+                color: #999;
                 text-decoration: underline;
             }
         }
@@ -281,57 +325,117 @@ li.creator-style {
 }
 
 .yt-item {
-    background-color: #dcedFF;
-    border-top: 1px solid rgba(0, 0, 0, .1);
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    // background-color: $smokey-topaz-platform;
+    background-color:rgba(0,0,0,1);
+    // background-color: $smokey-topaz-platform;
+    // border-top: 1px solid rgba(0, 0, 0, .1);
+    // border-bottom: 1px solid rgba(0, 0, 0, .1);
     // width: 100%;
     // height: 192px;
-    padding-top:4px;
-    border-right: 4px inset rgba(0, 0, 0, .1);
+    // margin-top:2px;
+
+    padding-bottom:4px;
+    // border-right: 4px inset rgba(0, 0, 0, .1);
 }
 
 .yt-table {
-    margin: 0px auto 0px auto;
-    // width: 97%;
+    // margin: 0px auto 0px auto;
     // use same height as thumb
     // border: 1px solid black;
     /* margin:5px; */
+    table-layout: fixed;
     vertical-align: middle;
     // height: 180px;
+    border-collapse:collapse;
 }
 
 .yt-row {
+    // background-color: $smokey-topaz-platform;
 }
 
-.yt-cell:first-child {
-    border-bottom: 2px ridge rgba(154, 198, 125, 1);
-    background-color: #8cae68;
-    width: 80%;
+.plate {
+    width:190px;
+    height:80%;
+    background-color: $smokey-topaz-stroke;
+    margin-left:auto;
+    margin-right:auto;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
-.yt-cell {
-    border-bottom: 2px ridge rgba(154, 198, 125, 1);
-    background-color: #8cae68;
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
 }
 
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+// done with table-cell https://stackoverflow.com/questions/10968726/how-to-vertically-align-into-the-center-of-the-content-of-a-div-with-defined-wid
 // https://stackoverflow.com/questions/4888223/align-image-in-center-and-middle-within-div
+// https://stackoverflow.com/questions/396145/how-can-i-vertically-center-a-div-element-for-all-browsers-using-css
+// https://css-tricks.com/centering-css-complete-guide/
+
 .yt-cell-thumb {
-    border-bottom: 2px ridge rgba(154, 198, 125, 1);
-    background-color: #8cae68;
+    padding:8px;
 
-    // display: block;
-    // height:180px;
+    // width: 640px;
+    // height: 360px;
+
+    // SAM: old sizes, need a bigger resolution.
+    // width: 240px;
+    // height: 180px;
+
+    // border-bottom: 2px ridge rgba(154, 198, 125, 1);
+    // SAM: old green
+    // background-color: #8cae68;
+    background-color: $smokey-topaz-platform-dull;
+
+    // vertical centering method 1
+    // tag is <td> already so assigning display:table-cell is redundant
+    display:table-cell;
+    vertical-align:middle;
+
+    // vertical centering method 2
+    // display:block;
+    // position: relative;
+    // width: 240px;
+    // height: 135px;
+
     a {
-        display: flex;
-        float: left;
-        margin: auto;
-
-        width: 240px;
-
-        // height: 180px;
-
         // SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites
-        // position:relative;
+
+        // vertical centering method 1
+        display:block;
+
+        width:640px;
+        height:360px;
+
+        // SAM: old sizes
+        // width:240px;
+        // height:135px;
+
+        // vertical centering method 2
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+
 
         &:link, &:visited, &:hover, &:focus {
             text-decoration: none;
@@ -344,8 +448,38 @@ li.creator-style {
     }
 }
 
+.yt-cell {
+    // border-bottom: 2px ridge rgba(154, 198, 125, 1);
+    background-color: $smokey-topaz-platform-dull;
+}
+.yt-cell:nth-child(3) {
+    width: auto;
+}
+.yt-cell:nth-child(4) {
+    width: 100%;
+}
+
 .time {
-    display: inline-block;
+    // vertical centering method 1
+    pointer-events: none;
+    position:relative;
+    display:block;
+    text-align: center;
+
+    // display:inline-block;
+    // left:67%;
+
+    // optional
+    bottom: 20px;
+
+    background-color: rgba(192, 192, 192, .25);
+
+    // vertical centering method 2
+    // position:absolute;
+    // text-align: center;
+    // width: 100%;
+    // left: 0px;
+    // bottom: 0px;
 }
 
 
@@ -383,16 +517,6 @@ li.creator-style {
         // width: 10%;
         float: left;
     }
-}
-
-a {
-    text-decoration:none;
-    color:#0383c9;
-}
-
-a:hover {
-    text-decoration:underline;
-    color: #f5a2c6;
 }
 
 .bullet {
@@ -436,12 +560,12 @@ a:hover {
 @media all and (max-width: 720px) {
     /*
     // carried over from previous website...
-    .flexContainer {
+    .flex {
         -webkit-flex-flow: column nowrap;
         justify-content:center;
     }
 
-    .blogItem {
+    .item {
         align-self:center;
         width:100%;
     }

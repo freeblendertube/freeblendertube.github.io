@@ -79,12 +79,10 @@ VideoThumbnail.prototype.setOnMouseMoveListenerByDivElement = function (divElem,
 		// SAM: set to time
 		var parentClass = divElem.className.split(' ')[1];
 		parentClass = ".yt-cell-thumb." + parentClass;
-		var time = $(parentClass + ' > .time')[0];
 		var anchor = $(parentClass + ' > a')[0];
+		var time = $(parentClass + ' > a > .time')[0];
 
 		seconds = Math.round(divElem.dataset.time*(curPx/100));
-		// var div = $(parentClass + ' > a > div')[0];
-		// div.dataset.jumpto = "?t=" + seconds;
 
 		anchor.dataset.jumpto = "?t=" + seconds;
 		seconds = new Date(seconds * 1000).toISOString().substr(11, 8);
@@ -102,7 +100,10 @@ VideoThumbnail.prototype.setOnMouseOutListenerByDivElement = function (divElem, 
 		// SAM: remove time
 		var parentClass = divElem.className.split(' ')[1];
 		parentClass = ".yt-cell-thumb." + parentClass;
-		var time = $(parentClass + ' > .time')[0];
+		var anchor = $(parentClass + ' > a')[0];
+		var time = $(parentClass + ' > a > .time')[0];
+
+		anchor.dataset.jumpto = "";
 		time.innerHTML = "";
 	};
 };
@@ -132,10 +133,10 @@ VideoThumbnail.prototype.displayThumbs = function () {
         this.getThumbnailMapWidthByDivElement(divItem, defaultThumbnailNr, function(imageWidth, divElem, defaultThumbNr) {
 
 			// SAM: my ratio
-			var newHeight = 240 * (180 / (imageWidth/100));
+			var newHeight = 640 * (360 / (imageWidth/100));
 			// divElem.style.border = '1px solid red';
+			divElem.style.width = '640px';
 			divElem.style.height = newHeight + 'px';
-			divElem.style.width = '240px';
 
 			thumbnailMapWidth = imageWidth;
             divItem = divElem;
