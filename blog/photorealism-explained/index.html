@@ -72,11 +72,12 @@
             <div class="menu navCreators">
                 <a href="/creators/">creators</a>
             </div>
-            <div class="menu navTimelapse">
-                <a href="/">timelapse</a>
+            <div class="menu navTimelapsed">
+                <a href="/"><span>timelapsed
+                    videos</span></a>
             </div>
-            <div class="menu navTutorial">
-                <a href="/">tutorial</a>
+            <div class="menu navTutorials">
+                <a href="/">tutorials</a>
             </div>
             <div class="menu nav3D">
                 <a href="/">3d</a>
@@ -105,24 +106,43 @@
     
     
     <div class="item"> <!-- eventually use <a style="display:block"> -->
-        <div class="item-header">
+        <!-- <div class="item-header">
             <span class="title-style"><a href="/blog/photorealism-explained/">Photorealism Explained</a></span>
             <span class="date-style">May 25, 2016</span>
-        </div>
+        </div> -->
         <div class="yt-item">
             <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
             <table class="yt-table">
-                <tr class="yt-row">
-                    <td class="yt-cell"><i>by</i> <div class="video-creator"><span>Blender Guru</span></div></td>
 
-                    <td class="yt-cell-thumb">
-                        <a href=https://youtu.be/R1-Ef54uTeU rel="noopener noreferrer" target="_blank">
-                            <div class="this-is-spartaaa" data-defaultimgnr="1" data-img="/images/post-content/photorealism-explained-preview.jpg"></div>
+            <tr class="yt-row">
+                <td class="yt-cell"></td>
+                <td class="yt-cell-thumb ">
+                    <!-- <div class="scrub-box "> -->
+                        <a href="#" data-original="" data-jumpto="" rel="noopener noreferrer" target="_blank">
+
+                            <!-- videobox sprite-box scrubber -->
+                            <div class="this-is-spartaaa " data-defaultimgnr="1" data-img="/images/post-content/photorealism-explained-preview.jpg" data-time="" data-jumpto=""></div>
+                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                            <!-- <img class="yt-real-thumb" src="/images/post-content/photorealism-explained-thumb.jpg"> -->
+                            <span class="time"></span>
                         </a>
-                    </td>
-                </tr>
+                    <!-- </div> -->
+                </td>
+                <td class="yt-cell">
+                    <div class="plate">
+                        <span class="title-style"><a href="">Photorealism Explained</a></span>
+                        <div class="video-creator">created by: <span>Blender Guru</span></div>
+                        <div class="date-style">| <span>May 25 2016</span></div>
+                    </div>
+                    <div class="tooltip">Hover over me
+                        <span class="tooltiptext">Tooltip text</span>
+                    </div>
+                </td>
+                <td class="yt-cell"></td>
+            </tr>
             </table>
         </div>
+        <!-- SAM: What was this for? -->
         
 
         <p class="post-meta"></p>
