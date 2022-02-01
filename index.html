@@ -22,7 +22,17 @@ All calls to site.posts should be replaced by paginator.posts
         <table class="yt-table">
 
             <tr class="yt-row">
-                <td class="yt-cell" style="width: 25%;"></div>
+                <td class="yt-cell">
+                    <div class="plate">
+                        <span class="title-style"><a href="{{post.url}}">{{post.video_title}}</a></span>
+                        <div class="video-creator">created by: <span>{{post.video_creator}}</span></div>
+                        <div class="date-style">| <span>{{ post.date | date: "%b " }}{{ post.date | date: "%-d" }}{{ post.date | date: " %Y" }}</span></div>
+                    </div>
+                    <div class="tooltip">Hover over me
+                        <span class="tooltiptext">Tooltip text</span>
+                    </div>
+                </td>
+                <td class="yt-cell"></td>
                 <td class="yt-cell-thumb {{post.video_id}}">
                     <!-- <div class="scrub-box {{post.video_id}}"> -->
                         <a href="#" data-original="{{post.video_url}}" data-jumpto="" rel="noopener noreferrer" target="_blank">
@@ -35,19 +45,8 @@ All calls to site.posts should be replaced by paginator.posts
                         </a>
                     <!-- </div> -->
                 </td>
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="{{post.url}}">{{post.video_title}}</a></span>
-                        <div class="video-creator">created by: <span>{{post.video_creator}}</span></div>
-                        <div class="date-style">| <span>{{ post.date | date: "%b " }}{{ post.date | date: "%-d" }}{{ post.date | date: " %Y" }}</span></div>
-                    </div>
-                </td>
-                <td class="yt-cell" style="width: 25%;">
-<div class="tooltip">Hover over me
-  <span class="tooltiptext">Tooltip text</span>
-</div>
-                </div>
 
+                <td class="yt-cell"></td>
             </tr>
         </table>
     </div>

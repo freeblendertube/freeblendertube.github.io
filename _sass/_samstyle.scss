@@ -6,6 +6,8 @@ body {
     font-family: $font_family_consolas;
 
     background-color: rgba(1,1,1,1);
+
+    color: #999;
 }
 
 a {
@@ -36,8 +38,6 @@ ul {
     padding-right:20px;*/
     padding-left:13px;
     padding-right:13px;
-
-    color: #999;
 }
 
 .header {
@@ -45,8 +45,8 @@ ul {
     min-width:220px;
     max-width:884px;
     height:200px;
-margin-left: auto;
-margin-right:auto;
+    // margin-left: auto;
+    // margin-right:auto;
     padding: 8px;
 
     border-radius: 5px 5px 0px 0px;
@@ -75,8 +75,7 @@ margin-right:auto;
 }
 
 .logo-blendertube {
-
-    margin: -12px auto 0px auto;
+    margin: -21px auto 0px auto;
     width:330px;
     // line-height: 80px;
     // background-color: $shadow-blue-platform;
@@ -109,9 +108,12 @@ margin-right:auto;
             color: #000000;
             -webkit-text-fill-color: #000000;
             -webkit-text-stroke-width: 0px;
+
+            // SAM: offset below
             // position:absolute;
             // margin-top: 60px;
             // margin-left: -320px;
+
             font-family: $title-font-family;
             font-weight: 400;
             font-size: 28px;
@@ -123,15 +125,96 @@ margin-right:auto;
     }
 }
 
-// SAM: Are any features by changing and renaming classes? why did I originally have separate classes for links?
-.grid {
-
+// SAM: Is anything messed up after changing <a> classes? why did I originally have separate classes for links?
+.navAllVideos {
+    grid-area: allvideos;
+    font-size: 18px;
+    line-height: 1.4;
 }
+
+.navCreators {
+    grid-area: creators;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.navTimelapsed {
+    grid-area: timelapse;
+    font-size: 16px;
+    line-height: .8;
+    span {
+        white-space: pre-line;
+    }
+}
+.navTutorials {
+    grid-area: tutorial;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.nav2D {
+    grid-area: twd;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.nav3D {
+    grid-area: thd;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.navGreasePencil {
+    grid-area: gp;
+    font-size: 16px;
+    line-height: .8;
+    span {
+        white-space: pre-line;
+    }
+}
+.navAbout {
+    grid-area: about;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.navSupport {
+    grid-area: support;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.grid {
+  // SAM: redo this
+  // https://css-tricks.com/snippets/css/complete-guide-grid/#introduction
+      // Since grid-template doesn’t reset the implicit grid properties (grid-auto-columns,
+      // grid-auto-rows, and grid-auto flow), which is probably what you want to do in most cases,
+      // it’s recommended to use the grid property instead of grid-template.
+  grid-template:
+    [rowspace-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px [rowspace-end]
+    [row1-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px
+                 "allvideos . . timelapse timelapse timelapse timelapse timelapse timelapse . . . about" 5px
+                 "allvideos . . . . . . . . . . . about" 1px [row1-end]
+    [rowspace-start] "allvideos . . tutorial tutorial tutorial tutorial tutorial tutorial . . . about" 10px [rowspace-end]
+    [row2-start] ". . . tutorial tutorial tutorial tutorial tutorial tutorial . . . ." 1px
+                 "creators . . tutorial tutorial tutorial tutorial tutorial tutorial . . . support" 5px
+                 "creators . . . . . . . . . . . support" 2px [row2-end]
+    [rowspace-start] "creators . twd twd . thd thd . gp gp gp . support" 10px [rowspace-end]
+    [row3-start] ". . twd twd . thd thd . gp gp gp . ." 6px [row3-end]
+    [row3-start] ". . twd twd . thd thd . gp gp gp . ." 1px [row3-end]
+    / 80px auto 15px 10px 1px 10px 10px 1px 15px 1px 15px auto 80px;
+
+
+
+    display: grid;
+    gap: 5px;
+    width:100%;
+    max-width:884px;
+    justify-content:center;
+}
+
 .menu {
     > a {
         display:block;
         text-align: center;
-        width:100%;
+        margin:-5px;
+        padding:3px 0px 3px 0px;
+        // width:100%;
         height:100%;
         color: rgba(0, 0, 0, .8);
         border-radius: 25px;
@@ -157,83 +240,6 @@ margin-right:auto;
     }
 }
 
-.navAllVideos {
-    grid-area: allvideos;
-    font-size: 24px;
-    line-height: 1;
-}
-
-.navCreators {
-    grid-area: creators;
-    font-size: 24px;
-    line-height: 1;
-}
-.navTimelapse {
-    grid-area: timelapse;
-    font-size: 18px;
-    line-height: 1.4;
-}
-.navTutorial {
-    grid-area: tutorial;
-    font-size: 18px;
-    line-height: 1.4;
-}
-.nav2D {
-    grid-area: twd;
-    font-size: 18px;
-    line-height: 1.4;
-}
-.nav3D {
-    grid-area: thd;
-    font-size: 18px;
-    line-height: 1.4;
-}
-.navGreasePencil {
-    grid-area: gp;
-    font-size: 16px;
-    line-height: .8;
-    span {
-        white-space: pre-line;
-    }
-}
-.navAbout {
-    grid-area: about;
-    font-size: 24px;
-    line-height: 1;
-}
-.navSupport {
-    grid-area: support;
-    font-size: 24px;
-    line-height: 1;
-}
-
-.grid {
-    display: grid;
-    gap: 4px;
-  // SAM: redo this
-  // https://css-tricks.com/snippets/css/complete-guide-grid/#introduction
-      // Since grid-template doesn’t reset the implicit grid properties (grid-auto-columns,
-      // grid-auto-rows, and grid-auto flow), which is probably what you want to do in most cases,
-      // it’s recommended to use the grid property instead of grid-template.
-  grid-template:
-    [rowspace-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px [rowspace-end]
-    [row1-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px
-                 "allvideos . . timelapse timelapse timelapse timelapse timelapse timelapse . . . about" 5px
-                 "allvideos . . . . . . . . . . . about" 1px [row1-end]
-    [rowspace-start] "allvideos . . tutorial tutorial tutorial tutorial tutorial tutorial . . . about" 10px [rowspace-end]
-    [row2-start] ". . . tutorial tutorial tutorial tutorial tutorial tutorial . . . ." 1px
-                 "creators . . tutorial tutorial tutorial tutorial tutorial tutorial . . . support" 5px
-                 "creators . . . . . . . . . . . support" 2px [row2-end]
-    [rowspace-start] "creators . twd twd . thd thd . gp gp gp . support" 10px [rowspace-end]
-    [row3-start] ". . twd twd . thd thd . gp gp gp . ." 6px [row3-end]
-    [row3-start] ". . twd twd . thd thd . gp gp gp . ." 1px [row3-end]
-    / 120px auto 16px 16px 1px 16px 16px 1px 60px 1px 16px auto 120px;
-
-    width:100%;
-    max-width:884px;
-    justify-content:center;
-}
-
 // styling of tags found in index.html
 .flex {
     display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
@@ -256,8 +262,8 @@ margin-right:auto;
 }
 
 .item {
-    overflow:hidden;
     width:100%;
+    padding-bottom:4px;
 
     // border-radius: 5px 5px 5px 5px;
     // outline: rgb(16, 16, 16) none 0px;
@@ -307,6 +313,18 @@ div.video-creator {
         // font-family: $alpaca_scarlett_demo;
     }
 }
+div.video-creator-page {
+    display:inline-block;
+    font-style: italic;
+    > span {
+        font-style: normal;
+        // #666666
+        // #6e6e6e
+        color: #999;
+        font-size: 20px;
+        // font-family: $alpaca_scarlett_demo;
+    }
+}
 
 li.creator-style {
     display:block;
@@ -324,21 +342,14 @@ li.creator-style {
     }
 }
 
-.yt-item {
-    // background-color: $smokey-topaz-platform;
-    background-color:rgba(0,0,0,1);
-    // background-color: $smokey-topaz-platform;
-    // border-top: 1px solid rgba(0, 0, 0, .1);
-    // border-bottom: 1px solid rgba(0, 0, 0, .1);
-    // width: 100%;
-    // height: 192px;
-    // margin-top:2px;
-
-    padding-bottom:4px;
-    // border-right: 4px inset rgba(0, 0, 0, .1);
+.item-header {
+    text-align: left;
 }
 
 .yt-table {
+    // SAM: try?
+    // width:100%;
+
     // margin: 0px auto 0px auto;
     // use same height as thumb
     // border: 1px solid black;
@@ -348,18 +359,27 @@ li.creator-style {
     // height: 180px;
     border-collapse:collapse;
 }
+.yt-item {
+    // SAM: have enabled while testing
+    // border:1px solid green;
+    overflow:hidden;
 
+}
 .yt-row {
+    // SAM: try?
+    // display:block;
+
     // background-color: $smokey-topaz-platform;
 }
 
 .plate {
     width:190px;
     height:80%;
-    background-color: $smokey-topaz-stroke;
+    // background-color: $smokey-topaz-stroke;
     margin-left:auto;
     margin-right:auto;
 }
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -392,7 +412,11 @@ li.creator-style {
 // https://css-tricks.com/centering-css-complete-guide/
 
 .yt-cell-thumb {
-    padding:8px;
+    // background-color: #511f24;
+    background-color: $smokey-topaz-platform-dull;
+    padding: 8px;
+    // SAM: have enabled while testing
+    // border:1px solid red;
 
     // width: 640px;
     // height: 360px;
@@ -404,7 +428,7 @@ li.creator-style {
     // border-bottom: 2px ridge rgba(154, 198, 125, 1);
     // SAM: old green
     // background-color: #8cae68;
-    background-color: $smokey-topaz-platform-dull;
+    // background-color: $smokey-topaz-platform-dull;
 
     // vertical centering method 1
     // tag is <td> already so assigning display:table-cell is redundant
@@ -448,15 +472,37 @@ li.creator-style {
     }
 }
 
-.yt-cell {
-    // border-bottom: 2px ridge rgba(154, 198, 125, 1);
-    background-color: $smokey-topaz-platform-dull;
+.yt-cell:nth-child(1) {
+    width:25%;
+    display:table-cell;
+    // background-color: $smokey-topaz-platform-dull;
 }
 .yt-cell:nth-child(3) {
     width: auto;
+    display:table-cell;
+        padding: 8px;
+    // background-color: $smokey-topaz-platform-dull;
 }
 .yt-cell:nth-child(4) {
-    width: 100%;
+    width:25%;
+    display:table-cell;
+    // background-color: $smokey-topaz-platform-dull;
+}
+.yt-cell-page:nth-child(1) {
+    width:25%;
+    display:table-cell;
+    background-color: $smokey-topaz-platform-dull;
+}
+.yt-cell-page:nth-child(3) {
+    width:25%;
+    display:table-cell;
+    background-color: $smokey-topaz-platform-dull;
+}
+.yt-cell-info {
+    text-align:center;
+}
+
+.this-is-spartaaa {
 }
 
 .time {
