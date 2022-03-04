@@ -1,5 +1,5 @@
 ---
-title: Pics and visuals - sizeoverload
+title: welcome our creators
 layout: allblogposts
 ---
 {% assign my_array = "" | split: ', ' %}
@@ -8,14 +8,15 @@ layout: allblogposts
 {% endfor %}
 {% assign my_array = my_array | uniq | sort_natural %}
 
+<div class="creatorsColumn">
 <h3>Welcome our creators:</h3>
-<ul class="creators-list">
+<ul>
 {% for i in my_array %}
     {% capture creator %}{{i}}{% endcapture %}
     {% assign creators_page = creator | remove: " " | remove: "'" | remove: "." | downcase %}
     <li class="{{creators_page}} creator-style font-{{forloop.index}}"><span><a href="{{creators_page}}/">{{creator}}</a></span></li>
 {% endfor %}
 </ul>
-
+</div>
 <!-- {% assign my_array_ordered = my_array | uniq | sort %}
 {{ my_array_ordered }} -->

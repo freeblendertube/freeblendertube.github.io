@@ -4,7 +4,6 @@ layout: allblogposts
 pagination:
   enabled: true
 ---
-<div class="flex">
 <!--
 Here is the main paginator logic called.
 All calls to site.posts should be replaced by paginator.posts
@@ -14,48 +13,41 @@ All calls to site.posts should be replaced by paginator.posts
 {% capture thumb_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{post.video_id | append: "-thumb.jpg"}}{% endcapture %}
 {% capture preview_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{post.video_id | append: "-preview.jpg"}}{% endcapture %}
 
-
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="{{post.url}}">{{post.video_title}}</a></span>
+                <div class="video-creator">created by: <span>{{post.video_creator}}</span></div>
+                <div class="date-style">| <span>{{ post.date | date: "%b " }}{{ post.date | date: "%-d" }}{{ post.date | date: " %Y" }}</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb {{post.video_id}}">
+            <!-- <div class="scrub-box {{post.video_id}}"> -->
+                <a href="#" data-original="{{post.video_url}}" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="{{post.url}}">{{post.video_title}}</a></span>
-                        <div class="video-creator">created by: <span>{{post.video_creator}}</span></div>
-                        <div class="date-style">| <span>{{ post.date | date: "%b " }}{{ post.date | date: "%-d" }}{{ post.date | date: " %Y" }}</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb {{post.video_id}}">
-                    <!-- <div class="scrub-box {{post.video_id}}"> -->
-                        <a href="#" data-original="{{post.video_url}}" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa {{post.video_id}}" data-defaultimgnr="1" data-img="{{preview_file}}" data-time="{{post.video_length}}" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="{{thumb_file}}"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    {% if post.custom_sub == 'ps-scripts' %}
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    {%endif%}
-</div>
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa {{post.video_id}}" data-defaultimgnr="1" data-img="{{preview_file}}" data-time="{{post.video_length}}" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="{{thumb_file}}"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 {% endfor %}
+
+<!-- SAM: What was this for? -->
+{% if post.custom_sub == 'ps-scripts' %}
+<a href="{{ post.url }}">{{ post.title }}</a>
+{%endif%}
 
 <!--
 Showing buttons to move to the next / previous list of posts (pager buttons).
@@ -74,4 +66,3 @@ Showing buttons to move to the next / previous list of posts (pager buttons).
     {% endif %}
 </ul>
 {% endif %}
-</div>

@@ -22,12 +22,16 @@ a:hover {
 
 ul {
     list-style-type: none;
-    padding: 0px 20px;
     li {
         padding: 1px;
     }
 }
 
+.constrained {
+    box-sizing: border-box;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+}
 
 .wrapper {
     min-width:220px;
@@ -40,62 +44,37 @@ ul {
     padding-right:13px;
 }
 
-.header {
-    margin:10px 0px 10px 0px;
-    min-width:220px;
-    max-width:884px;
-    height:200px;
-    // margin-left: auto;
-    // margin-right:auto;
-    padding: 8px;
-
-    border-radius: 5px 5px 0px 0px;
-
-    // $smokey-topaz-platform;
-    background-color: $blender-orange2;
-
-    // border-top: 2px outset $smokey-topaz-platform;
-    // border-right: 4px inset $smokey-topaz-stroke;
-
-    border-right: 4px inset $smokey-topaz-platform-dull;
-
-    // border-bottom: 2px outset white;
-
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
-    border-bottom-left-radius: 3px 3px;
-    border-bottom-right-radius: 3px 3px;
-
-    // border-style: outset;
-
-     box-shadow: 0 0 1px #fff inset;
-
-    // border-top: 1px solid rgba(0, 0, 0, 0.1);
-    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .logo-blendertube {
-    margin: -21px auto 0px auto;
-    width:330px;
-    // line-height: 80px;
+    // margin: -21px auto 0px auto;
+    margin:8px;
+    // width:330px;
+    position:absolute;
+    line-height: 12px;
     // background-color: $shadow-blue-platform;
     // border: 2px outset $shadow-blue;
     > a {
-        -webkit-text-fill-color: $blender-orange1;
+        color: #000000;
+
+        // SAM: old style
         // -webkit-text-stroke-width: .1px;
         // -webkit-text-stroke-color: rgba(0, 0, 0, .4);
+
         font-family: $title-secondary-font-family;
-        font-weight: bolder;
-        font-size: 110px;
+        font-weight: 100;
+        font-size: 30px;
         // cursor: default;
-            letter-spacing: .01em;
-    text-shadow:
-      .1px .5px 4px #fff,
-      0px 1px 0px $blender-orange3,
-      0px 2px 2px $blender-orange2,
-      0px 3px 3px $blender-orange1,
-      0px 4px 4px $blender-orange2,
-      0px 5px 5px $blender-orange3;
+        letter-spacing: .01em;
+        // -webkit-text-fill-color: #F1592A;
+        color: $blender-orange2;
+        -webkit-text-fill-color: #000000;
+        -webkit-text-stroke-width: 1px;
+    // text-shadow:
+    //   0px 0px 4px #fff,
+    //   0px 1px 0px $blender-orange3,
+    //   0px 2px 2px $blender-orange2,
+    //   0px 3px 3px $blender-orange1,
+    //   0px 4px 4px $blender-orange2,
+    //   0px 5px 5px $blender-orange3;
         &:hover {
             text-decoration: none;
         }
@@ -105,24 +84,39 @@ ul {
         }
 
         > span {
-            color: #000000;
-            -webkit-text-fill-color: #000000;
-            -webkit-text-stroke-width: 0px;
+            // background-color: red;
+            color: #F1592A;
+            // -webkit-text-fill-color: #000000;
+            // -webkit-text-stroke-width: 2px;
 
             // SAM: offset below
             // position:absolute;
-            // margin-top: 60px;
+            padding:4px;
+            margin-top: -3px;
             // margin-left: -320px;
-
+            display: block;
+            text-align: center;
+            border-radius: 25px;
+            // border: 2px outset $shadow-blue;
             font-family: $title-font-family;
-            font-weight: 400;
-            font-size: 28px;
-            opacity:.8;
+            // font-weight: 400;
+            font-size: 22px;
+            opacity: 1;
             // line-height:8px;
-            text-shadow: 1px 3px 0px rgba(0, 0, 0, .4);
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, .2);
             z-index: 1;
         }
     }
+}
+
+.logo-blendertube-banner {
+    // border:1px solid red;
+    width:60px;
+    height:60px;
+    margin: auto auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/images/tv-cropped.png');
 }
 
 // SAM: Is anything messed up after changing <a> classes? why did I originally have separate classes for links?
@@ -180,32 +174,18 @@ ul {
 }
 
 .grid {
-  // SAM: redo this
-  // https://css-tricks.com/snippets/css/complete-guide-grid/#introduction
+      // SAM: redo this
+      // https://css-tricks.com/snippets/css/complete-guide-grid/#introduction
       // Since grid-template doesn’t reset the implicit grid properties (grid-auto-columns,
       // grid-auto-rows, and grid-auto flow), which is probably what you want to do in most cases,
       // it’s recommended to use the grid property instead of grid-template.
-  grid-template:
-    [rowspace-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px [rowspace-end]
-    [row1-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px
-                 "allvideos . . timelapse timelapse timelapse timelapse timelapse timelapse . . . about" 5px
-                 "allvideos . . . . . . . . . . . about" 1px [row1-end]
-    [rowspace-start] "allvideos . . tutorial tutorial tutorial tutorial tutorial tutorial . . . about" 10px [rowspace-end]
-    [row2-start] ". . . tutorial tutorial tutorial tutorial tutorial tutorial . . . ." 1px
-                 "creators . . tutorial tutorial tutorial tutorial tutorial tutorial . . . support" 5px
-                 "creators . . . . . . . . . . . support" 2px [row2-end]
-    [rowspace-start] "creators . twd twd . thd thd . gp gp gp . support" 10px [rowspace-end]
-    [row3-start] ". . twd twd . thd thd . gp gp gp . ." 6px [row3-end]
-    [row3-start] ". . twd twd . thd thd . gp gp gp . ." 1px [row3-end]
-    / 80px auto 15px 10px 1px 10px 10px 1px 15px 1px 15px auto 80px;
-
-
-
-    display: grid;
-    gap: 5px;
-    width:100%;
-    max-width:884px;
-    justify-content:center;
+      grid-template: [rowspace-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px [rowspace-end] [row1-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px "allvideos . . timelapse timelapse timelapse timelapse timelapse timelapse . . . about" 5px "allvideos . . . . . . . . . . . about" 1px [row1-end] [rowspace-start] "allvideos . . tutorial tutorial tutorial tutorial tutorial tutorial . . . about" 10px [rowspace-end] [row2-start] ". . . tutorial tutorial tutorial tutorial tutorial tutorial . . . ." 1px "creators . . tutorial tutorial tutorial tutorial tutorial tutorial . . . support" 5px "creators . . . . . . . . . . . support" 2px [row2-end] [rowspace-start] "creators . twd twd . thd thd . gp gp gp . support" 10px [rowspace-end] [row3-start] ". . twd twd . thd thd . gp gp gp . ." 6px [row3-end] [row3-start] ". . twd twd . thd thd . gp gp gp . ." 1px [row3-end]/80px auto 15px 10px 1px 10px 10px 1px 15px 1px 15px auto 80px;
+        display: grid;
+        gap: 5px;
+        /* changed */
+        /* width: 100%; */
+        width: 800px;
+        justify-content: center;
 }
 
 .menu {
@@ -342,42 +322,120 @@ li.creator-style {
     }
 }
 
+.creatorsColumn {
+    width:190px;
+    display: table-cell;
+}
 .item-header {
     text-align: left;
 }
 
-.yt-table {
-    // SAM: try?
-    // width:100%;
-
-    // margin: 0px auto 0px auto;
-    // use same height as thumb
-    // border: 1px solid black;
-    /* margin:5px; */
-    table-layout: fixed;
-    vertical-align: middle;
-    // height: 180px;
-    border-collapse:collapse;
-}
 .yt-item {
     // SAM: have enabled while testing
     // border:1px solid green;
     overflow:hidden;
 
 }
-.yt-row {
-    // SAM: try?
-    // display:block;
 
-    // background-color: $smokey-topaz-platform;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // SAM: height here?
+    // height: 162px;
+    color: #ddd;
+    background: #000000;
+    padding: 0;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    z-index: 200;
+}
+
+.headerDiv {
+    /* all this flex does is vertically align  */
+    display: flex;
+    color: #fff;
+    // SAM: height here?
+    height: 162px;
+    align-items: center;
+    position: relative;
+}
+
+.headerCell1 {
+    width:190px;
+    display: table-cell;
+}
+.headerCell2 {
+    width: 800px;
+    background-color: #ee9131;
+    display: table-cell;
+
+    /* padding: 8px; */
+    border-radius: 5px 5px 0px 0px;
+    border-right: 4px inset rgba(162, 62, 72, 0.5);
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border-bottom-left-radius: 3px 3px;
+    border-bottom-right-radius: 3px 3px;
+    box-shadow: 0 0 1px #fff inset;
+
+    // SAM: TEST THESE
+    border-radius: 5px 5px 0px 0px;
+
+    // $smokey-topaz-platform;
+    background-color: $blender-orange2;
+
+    // border-top: 2px outset $smokey-topaz-platform;
+    // border-right: 4px inset $smokey-topaz-stroke;
+
+    border-right: 4px inset $smokey-topaz-platform-dull;
+
+    // border-bottom: 2px outset white;
+
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border-bottom-left-radius: 3px 3px;
+    border-bottom-right-radius: 3px 3px;
+
+    // border-style: outset;
+
+    box-shadow: 0 0 1px #fff inset;
+}
+.headerCell3 {
+    width: auto;
+    display: table-cell;
+}
+
+.stepDown {
+    height: 162px;
+}
+
+main {
+    display: block;
+}
+
+.mainDiv {
+    /* background-color: #511f24; */
+    /* border-right: 4px inset rgba(162, 62, 72, 0.5); */
+}
+
+.yt-table {
+    /* margin:5px; */
+    table-layout: fixed;
+    vertical-align: middle;
+    border-collapse: collapse;
+    /* background-color: #511f24; */
+    /* background-color: rgba(162, 62, 72, 0.5); */
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
 }
 
 .plate {
-    width:190px;
-    height:80%;
+    width: 190px;
+    height: 80%;
     // background-color: $smokey-topaz-stroke;
-    margin-left:auto;
-    margin-right:auto;
+    // margin-left:auto;
+    // margin-right:auto;
 }
 
 .tooltip {
@@ -406,6 +464,10 @@ li.creator-style {
   visibility: visible;
 }
 
+table {
+    width: 100%;
+}
+
 // done with table-cell https://stackoverflow.com/questions/10968726/how-to-vertically-align-into-the-center-of-the-content-of-a-div-with-defined-wid
 // https://stackoverflow.com/questions/4888223/align-image-in-center-and-middle-within-div
 // https://stackoverflow.com/questions/396145/how-can-i-vertically-center-a-div-element-for-all-browsers-using-css
@@ -413,53 +475,42 @@ li.creator-style {
 
 .yt-cell-thumb {
     // background-color: #511f24;
-    background-color: $smokey-topaz-platform-dull;
-    padding: 8px;
+    // background-color: $smokey-topaz-platform-dull;
+    // padding: 8px;
+
     // SAM: have enabled while testing
     // border:1px solid red;
 
-    // width: 640px;
-    // height: 360px;
+    /* background-color: rgba(162, 62, 72, 0.5); */
 
-    // SAM: old sizes, need a bigger resolution.
-    // width: 240px;
-    // height: 180px;
+    /* dynamic width */
+    /* width: 100%;
+    max-width: 800px;     */
+
+    /* fixed */
+    width: 800px;
+
+    /* padding: 8px;  */
+    display: table-cell;
+    background-color: #511f24;
+    /* SAM: RECENT */
+    /* vertical-align: middle; */
 
     // border-bottom: 2px ridge rgba(154, 198, 125, 1);
     // SAM: old green
     // background-color: #8cae68;
     // background-color: $smokey-topaz-platform-dull;
 
-    // vertical centering method 1
-    // tag is <td> already so assigning display:table-cell is redundant
-    display:table-cell;
-    vertical-align:middle;
-
-    // vertical centering method 2
-    // display:block;
-    // position: relative;
-    // width: 240px;
-    // height: 135px;
-
     a {
         // SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites
 
-        // vertical centering method 1
-        display:block;
-
-        width:640px;
-        height:360px;
-
-        // SAM: old sizes
-        // width:240px;
-        // height:135px;
-
-        // vertical centering method 2
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
-
+        /* margin-left: auto;
+        margin-right: 0; */
+        margin: auto auto;
+        display: block;
+        padding: 8px;
+        max-width: 640px;
+        height: 360px;
 
         &:link, &:visited, &:hover, &:focus {
             text-decoration: none;
@@ -472,37 +523,20 @@ li.creator-style {
     }
 }
 
-.yt-cell:nth-child(1) {
-    width:25%;
-    display:table-cell;
-    // background-color: $smokey-topaz-platform-dull;
+.bodyCell1 {
+    width:190px;
+    display: table-cell;
 }
-.yt-cell:nth-child(3) {
-    width: auto;
-    display:table-cell;
-        padding: 8px;
-    // background-color: $smokey-topaz-platform-dull;
-}
-.yt-cell:nth-child(4) {
-    width:25%;
-    display:table-cell;
-    // background-color: $smokey-topaz-platform-dull;
-}
-.yt-cell-page:nth-child(1) {
-    width:25%;
-    display:table-cell;
-    background-color: $smokey-topaz-platform-dull;
-}
-.yt-cell-page:nth-child(3) {
-    width:25%;
-    display:table-cell;
-    background-color: $smokey-topaz-platform-dull;
-}
-.yt-cell-info {
-    text-align:center;
+
+.bodyCell3 {
+    width: 190px;
+    display: table-cell;
+    /* background-color: rgba(162, 62, 72, 0.5); */
 }
 
 .this-is-spartaaa {
+    background-color: red;
+    background-position: center;
 }
 
 .time {
@@ -603,9 +637,25 @@ li.creator-style {
     border-top: 1px solid rgba(0, 0, 0, 1);
     padding: 10px 0 30px;
 }
+
+@media(min-width:1200px) {
+    .constrained {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .homepage-menu-item {
+        margin-right: 3rem;
+    }
+    .singleMedia .mediaList-image {
+        height: 28rem;
+        object-fit: cover;
+    }
+}
+
 @media all and (max-width: 720px) {
-    /*
     // carried over from previous website...
+    /*
     .flex {
         -webkit-flex-flow: column nowrap;
         justify-content:center;
@@ -616,8 +666,4 @@ li.creator-style {
         width:100%;
     }
     */
-
-    .title-style {
-        max-width: 240px;
-    }
 }
