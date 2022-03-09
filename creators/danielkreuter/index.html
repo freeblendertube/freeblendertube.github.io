@@ -60,44 +60,56 @@
 </head>
 
 <body>
-<div class="wrapper">
-    <div class="header">
-        <div class="logo-blendertube">
-            <a href="/">blender<span>tube</span></a>
-        </div>
-        <div class="grid">
-            <div class="menu navAllVideos">
-                <a href="/">all videos</a>
-            </div>
-            <div class="menu navCreators">
-                <a href="/creators/">creators</a>
-            </div>
-            <div class="menu navTimelapsed">
-                <a href="/"><span>timelapsed
-                    videos</span></a>
-            </div>
-            <div class="menu navTutorials">
-                <a href="/">tutorials</a>
-            </div>
-            <div class="menu nav3D">
-                <a href="/">3d</a>
-            </div>
-            <div class="menu nav2D">
-                <a href="/">2d</a>
-            </div>
-            <div class="menu navGreasePencil">
-                <a href="/"><span>Grease
-                    Pencil</span></a>
-            </div>
-            <div class="menu navAbout">
-                <a href="/about/">about</a>
-            </div>
-            <div class="menu navSupport">
-                <a href="/support/">support</a>
-            </div>
+    <header class="header">
+		<div class="headerDiv constrained">
+            <div class="headerCell1"></div>
+            <div class="headerCell2">
+                <!-- SAM: Logo -->
+                <div class="logo-blendertube">
+                    <a href="/">blender<span>tube</span></a>
+                    <div class="logo-blendertube-banner"></div>
+                </div>
 
-        </div>
-    </div>
+                <div class="grid">
+                    <div class="menu navAllVideos">
+                        <a href="/">all videos</a>
+                    </div>
+                    <div class="menu navCreators">
+                        <a href="/creators/">creators</a>
+                    </div>
+                    <div class="menu navTimelapsed">
+                        <a href="/"><span>timelapsed
+                        videos</span></a>
+                    </div>
+                    <div class="menu navTutorials">
+                        <a href="/">tutorials</a>
+                    </div>
+                    <div class="menu nav3D">
+                        <a href="/">3d</a>
+                    </div>
+                    <div class="menu nav2D">
+                        <a href="/">2d</a>
+                    </div>
+                    <div class="menu navGreasePencil">
+                        <a href="/"><span>Grease
+                        Pencil</span></a>
+                    </div>
+                    <div class="menu navAbout">
+                        <a href="/">about</a>
+                    </div>
+                    <div class="menu navSupport">
+                        <a href="/">support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="headerCell3"></div>
+		</div>
+	</header>
+
+    <main>
+		<div class="mainDiv constrained">
+            <div class="stepDown">
+            </div>
 
 
 <h3>Daniel Kreuter</h3>
@@ -505,8 +517,10 @@
 </div>
 
 
-<div class="footer">© 2018 blendertube.com, Inc. or its affiliates</div>
 </div>
+</main>
+<div class="footer">© 2018 blendertube.com, Inc. or its affiliates</div>
+
 <script>
     $( document ).ready(function() {
         var thumbs = new VideoThumbnail();

@@ -60,47 +60,58 @@
 </head>
 
 <body>
-<div class="wrapper">
-    <div class="header">
-        <div class="logo-blendertube">
-            <a href="/">blender<span>tube</span></a>
-        </div>
-        <div class="grid">
-            <div class="menu navAllVideos">
-                <a href="/">all videos</a>
+    <header class="header">
+		<div class="headerDiv constrained">
+            <div class="headerCell1"></div>
+            <div class="headerCell2">
+                <!-- SAM: Logo -->
+                <div class="logo-blendertube">
+                    <a href="/">blender<span>tube</span></a>
+                    <div class="logo-blendertube-banner"></div>
+                </div>
+
+                <div class="grid">
+                    <div class="menu navAllVideos">
+                        <a href="/">all videos</a>
+                    </div>
+                    <div class="menu navCreators">
+                        <a href="/creators/">creators</a>
+                    </div>
+                    <div class="menu navTimelapsed">
+                        <a href="/"><span>timelapsed
+                        videos</span></a>
+                    </div>
+                    <div class="menu navTutorials">
+                        <a href="/">tutorials</a>
+                    </div>
+                    <div class="menu nav3D">
+                        <a href="/">3d</a>
+                    </div>
+                    <div class="menu nav2D">
+                        <a href="/">2d</a>
+                    </div>
+                    <div class="menu navGreasePencil">
+                        <a href="/"><span>Grease
+                        Pencil</span></a>
+                    </div>
+                    <div class="menu navAbout">
+                        <a href="/">about</a>
+                    </div>
+                    <div class="menu navSupport">
+                        <a href="/">support</a>
+                    </div>
+                </div>
             </div>
-            <div class="menu navCreators">
-                <a href="/creators/">creators</a>
-            </div>
-            <div class="menu navTimelapsed">
-                <a href="/"><span>timelapsed
-                    videos</span></a>
-            </div>
-            <div class="menu navTutorials">
-                <a href="/">tutorials</a>
-            </div>
-            <div class="menu nav3D">
-                <a href="/">3d</a>
-            </div>
-            <div class="menu nav2D">
-                <a href="/">2d</a>
-            </div>
-            <div class="menu navGreasePencil">
-                <a href="/"><span>Grease
-                    Pencil</span></a>
-            </div>
-            <div class="menu navAbout">
-                <a href="/about/">about</a>
-            </div>
-            <div class="menu navSupport">
-                <a href="/support/">support</a>
+            <div class="headerCell3"></div>
+		</div>
+	</header>
+
+    <main>
+		<div class="mainDiv constrained">
+            <div class="stepDown">
             </div>
 
-        </div>
-    </div>
 
-
-<div class="flex">
 <!--
 Here is the main paginator logic called.
 All calls to site.posts should be replaced by paginator.posts
@@ -110,441 +121,344 @@ All calls to site.posts should be replaced by paginator.posts
 
 
 
-
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/blender-age-builders-part-10-textures/">Blender Age Builders Part 10 - Textures</a></span>
+                <div class="video-creator">created by: <span>DreamBliss Flows</span></div>
+                <div class="date-style">| <span>Sep 2 2014</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb blender-age-builders-part-10-textures">
+            <!-- <div class="scrub-box blender-age-builders-part-10-textures"> -->
+                <a href="#" data-original="https://youtu.be/DzQv6uKIhFU" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/blender-age-builders-part-10-textures/">Blender Age Builders Part 10 - Textures</a></span>
-                        <div class="video-creator">created by: <span>DreamBliss Flows</span></div>
-                        <div class="date-style">| <span>Sep 2 2014</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb blender-age-builders-part-10-textures">
-                    <!-- <div class="scrub-box blender-age-builders-part-10-textures"> -->
-                        <a href="#" data-original="https://youtu.be/DzQv6uKIhFU" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa blender-age-builders-part-10-textures" data-defaultimgnr="1" data-img="/images/post-content/blender-age-builders-part-10-textures-preview.jpg" data-time="1655.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/blender-age-builders-part-10-textures-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
-
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa blender-age-builders-part-10-textures" data-defaultimgnr="1" data-img="/images/post-content/blender-age-builders-part-10-textures-preview.jpg" data-time="1655.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/blender-age-builders-part-10-textures-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
 
 
 
 
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/blender-27-tutorial-13-uv-mapping-unwrapping-for-image-textures/">Blender 2.7 Tutorial</a></span>
+                <div class="video-creator">created by: <span>BornCG</span></div>
+                <div class="date-style">| <span>Aug 29 2014</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures">
+            <!-- <div class="scrub-box blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures"> -->
+                <a href="#" data-original="https://youtu.be/Tovu1A0LxeQ" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/blender-27-tutorial-13-uv-mapping-unwrapping-for-image-textures/">Blender 2.7 Tutorial</a></span>
-                        <div class="video-creator">created by: <span>BornCG</span></div>
-                        <div class="date-style">| <span>Aug 29 2014</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures">
-                    <!-- <div class="scrub-box blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures"> -->
-                        <a href="#" data-original="https://youtu.be/Tovu1A0LxeQ" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures" data-defaultimgnr="1" data-img="/images/post-content/blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures-preview.jpg" data-time="1379.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
-
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures" data-defaultimgnr="1" data-img="/images/post-content/blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures-preview.jpg" data-time="1379.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/blender-27-tutorial-13--uv-mapping-unwrapping-for-image-textures-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
 
 
 
 
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/blender-27-tutorial-12-image-textures-bump-maps-b3d/">Blender 2.7 Tutorial</a></span>
+                <div class="video-creator">created by: <span>BornCG</span></div>
+                <div class="date-style">| <span>Aug 28 2014</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb blender-27-tutorial-12--image-textures--bump-maps-b3d">
+            <!-- <div class="scrub-box blender-27-tutorial-12--image-textures--bump-maps-b3d"> -->
+                <a href="#" data-original="https://youtu.be/NeWTTINkUG0" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/blender-27-tutorial-12-image-textures-bump-maps-b3d/">Blender 2.7 Tutorial</a></span>
-                        <div class="video-creator">created by: <span>BornCG</span></div>
-                        <div class="date-style">| <span>Aug 28 2014</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb blender-27-tutorial-12--image-textures--bump-maps-b3d">
-                    <!-- <div class="scrub-box blender-27-tutorial-12--image-textures--bump-maps-b3d"> -->
-                        <a href="#" data-original="https://youtu.be/NeWTTINkUG0" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa blender-27-tutorial-12--image-textures--bump-maps-b3d" data-defaultimgnr="1" data-img="/images/post-content/blender-27-tutorial-12--image-textures--bump-maps-b3d-preview.jpg" data-time="1434.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/blender-27-tutorial-12--image-textures--bump-maps-b3d-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
-
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa blender-27-tutorial-12--image-textures--bump-maps-b3d" data-defaultimgnr="1" data-img="/images/post-content/blender-27-tutorial-12--image-textures--bump-maps-b3d-preview.jpg" data-time="1434.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/blender-27-tutorial-12--image-textures--bump-maps-b3d-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
 
 
 
 
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/blender-for-noobs-makehuman-to-blender/">Blender For Noobs - MakeHuman to Blender!</a></span>
+                <div class="video-creator">created by: <span>BlenderForNoobs</span></div>
+                <div class="date-style">| <span>Aug 14 2014</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb blender-for-noobs-makehuman-to-blender">
+            <!-- <div class="scrub-box blender-for-noobs-makehuman-to-blender"> -->
+                <a href="#" data-original="https://youtu.be/tCbB_perbes" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/blender-for-noobs-makehuman-to-blender/">Blender For Noobs - MakeHuman to Blender!</a></span>
-                        <div class="video-creator">created by: <span>BlenderForNoobs</span></div>
-                        <div class="date-style">| <span>Aug 14 2014</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb blender-for-noobs-makehuman-to-blender">
-                    <!-- <div class="scrub-box blender-for-noobs-makehuman-to-blender"> -->
-                        <a href="#" data-original="https://youtu.be/tCbB_perbes" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa blender-for-noobs-makehuman-to-blender" data-defaultimgnr="1" data-img="/images/post-content/blender-for-noobs-makehuman-to-blender-preview.jpg" data-time="1237.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/blender-for-noobs-makehuman-to-blender-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
-
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa blender-for-noobs-makehuman-to-blender" data-defaultimgnr="1" data-img="/images/post-content/blender-for-noobs-makehuman-to-blender-preview.jpg" data-time="1237.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/blender-for-noobs-makehuman-to-blender-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
 
 
 
 
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/blender-271-tutorial-create-a-mountain-scene/">Blender 2.71 Tutorial - Create a Mountain Scene</a></span>
+                <div class="video-creator">created by: <span>Sardi Pax</span></div>
+                <div class="date-style">| <span>Jul 19 2014</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb blender-271-tutorial-create-a-mountain-scene">
+            <!-- <div class="scrub-box blender-271-tutorial-create-a-mountain-scene"> -->
+                <a href="#" data-original="https://youtu.be/3a6TmSvNWsw" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/blender-271-tutorial-create-a-mountain-scene/">Blender 2.71 Tutorial - Create a Mountain Scene</a></span>
-                        <div class="video-creator">created by: <span>Sardi Pax</span></div>
-                        <div class="date-style">| <span>Jul 19 2014</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb blender-271-tutorial-create-a-mountain-scene">
-                    <!-- <div class="scrub-box blender-271-tutorial-create-a-mountain-scene"> -->
-                        <a href="#" data-original="https://youtu.be/3a6TmSvNWsw" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa blender-271-tutorial-create-a-mountain-scene" data-defaultimgnr="1" data-img="/images/post-content/blender-271-tutorial-create-a-mountain-scene-preview.jpg" data-time="1881.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/blender-271-tutorial-create-a-mountain-scene-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
-
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa blender-271-tutorial-create-a-mountain-scene" data-defaultimgnr="1" data-img="/images/post-content/blender-271-tutorial-create-a-mountain-scene-preview.jpg" data-time="1881.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/blender-271-tutorial-create-a-mountain-scene-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
 
 
 
 
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/game-level-texturing-modeling-and-retopology-part-25/">Game level texturing: Modeling and retopology (PART 2/5)</a></span>
+                <div class="video-creator">created by: <span>Gleb Alexandrov</span></div>
+                <div class="date-style">| <span>Jul 11 2014</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb game-level-texturing-modeling-and-retopology-part-25">
+            <!-- <div class="scrub-box game-level-texturing-modeling-and-retopology-part-25"> -->
+                <a href="#" data-original="https://youtu.be/8SbTbuK0dZk" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/game-level-texturing-modeling-and-retopology-part-25/">Game level texturing: Modeling and retopology (PART 2/5)</a></span>
-                        <div class="video-creator">created by: <span>Gleb Alexandrov</span></div>
-                        <div class="date-style">| <span>Jul 11 2014</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb game-level-texturing-modeling-and-retopology-part-25">
-                    <!-- <div class="scrub-box game-level-texturing-modeling-and-retopology-part-25"> -->
-                        <a href="#" data-original="https://youtu.be/8SbTbuK0dZk" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa game-level-texturing-modeling-and-retopology-part-25" data-defaultimgnr="1" data-img="/images/post-content/game-level-texturing-modeling-and-retopology-part-25-preview.jpg" data-time="220.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/game-level-texturing-modeling-and-retopology-part-25-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
-
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa game-level-texturing-modeling-and-retopology-part-25" data-defaultimgnr="1" data-img="/images/post-content/game-level-texturing-modeling-and-retopology-part-25-preview.jpg" data-time="220.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/game-level-texturing-modeling-and-retopology-part-25-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
 
 
 
 
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/rounding-blender-3d-model/">Rounding Blender 3D model</a></span>
+                <div class="video-creator">created by: <span>Piotr Połomski</span></div>
+                <div class="date-style">| <span>Jul 7 2014</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb rounding-blender-3d-model">
+            <!-- <div class="scrub-box rounding-blender-3d-model"> -->
+                <a href="#" data-original="https://youtu.be/JUQddRgpADA" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/rounding-blender-3d-model/">Rounding Blender 3D model</a></span>
-                        <div class="video-creator">created by: <span>Piotr Połomski</span></div>
-                        <div class="date-style">| <span>Jul 7 2014</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb rounding-blender-3d-model">
-                    <!-- <div class="scrub-box rounding-blender-3d-model"> -->
-                        <a href="#" data-original="https://youtu.be/JUQddRgpADA" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa rounding-blender-3d-model" data-defaultimgnr="1" data-img="/images/post-content/rounding-blender-3d-model-preview.jpg" data-time="195.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/rounding-blender-3d-model-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
-
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa rounding-blender-3d-model" data-defaultimgnr="1" data-img="/images/post-content/rounding-blender-3d-model-preview.jpg" data-time="195.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/rounding-blender-3d-model-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
 
 
 
 
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/blender-level-designing-and-exporting-to-unity3d/">Blender - Level Designing And Exporting to Unity3D</a></span>
+                <div class="video-creator">created by: <span>Albert Gushiken</span></div>
+                <div class="date-style">| <span>Apr 28 2014</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb blender-level-designing-and-exporting-to-unity3d">
+            <!-- <div class="scrub-box blender-level-designing-and-exporting-to-unity3d"> -->
+                <a href="#" data-original="https://youtu.be/JvsoYWI27HI" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/blender-level-designing-and-exporting-to-unity3d/">Blender - Level Designing And Exporting to Unity3D</a></span>
-                        <div class="video-creator">created by: <span>Albert Gushiken</span></div>
-                        <div class="date-style">| <span>Apr 28 2014</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb blender-level-designing-and-exporting-to-unity3d">
-                    <!-- <div class="scrub-box blender-level-designing-and-exporting-to-unity3d"> -->
-                        <a href="#" data-original="https://youtu.be/JvsoYWI27HI" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa blender-level-designing-and-exporting-to-unity3d" data-defaultimgnr="1" data-img="/images/post-content/blender-level-designing-and-exporting-to-unity3d-preview.jpg" data-time="2840.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/blender-level-designing-and-exporting-to-unity3d-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
-
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa blender-level-designing-and-exporting-to-unity3d" data-defaultimgnr="1" data-img="/images/post-content/blender-level-designing-and-exporting-to-unity3d-preview.jpg" data-time="2840.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/blender-level-designing-and-exporting-to-unity3d-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
 
 
 
 
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/the-beast-texturing-in-blender-and-photoshop-44/">-The Beast- Texturing in Blender and Photoshop 4/4</a></span>
+                <div class="video-creator">created by: <span>Max Puliero</span></div>
+                <div class="date-style">| <span>Feb 18 2014</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb -the-beast--texturing-in-blender-and-photoshop-44">
+            <!-- <div class="scrub-box -the-beast--texturing-in-blender-and-photoshop-44"> -->
+                <a href="#" data-original="https://youtu.be/dIKwKa-Fy3o" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/the-beast-texturing-in-blender-and-photoshop-44/">-The Beast- Texturing in Blender and Photoshop 4/4</a></span>
-                        <div class="video-creator">created by: <span>Max Puliero</span></div>
-                        <div class="date-style">| <span>Feb 18 2014</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb -the-beast--texturing-in-blender-and-photoshop-44">
-                    <!-- <div class="scrub-box -the-beast--texturing-in-blender-and-photoshop-44"> -->
-                        <a href="#" data-original="https://youtu.be/dIKwKa-Fy3o" data-jumpto="" rel="noopener noreferrer" target="_blank">
-
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa -the-beast--texturing-in-blender-and-photoshop-44" data-defaultimgnr="1" data-img="/images/post-content/-the-beast--texturing-in-blender-and-photoshop-44-preview.jpg" data-time="7835.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/-the-beast--texturing-in-blender-and-photoshop-44-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
-
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
-
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa -the-beast--texturing-in-blender-and-photoshop-44" data-defaultimgnr="1" data-img="/images/post-content/-the-beast--texturing-in-blender-and-photoshop-44-preview.jpg" data-time="7835.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/-the-beast--texturing-in-blender-and-photoshop-44-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
 
 
 
 
 <!-- use bt and yt encoded -->
-<div class="item"> <!-- eventually use <a style="display:block"> -->
-    <div class="yt-item">
-        <!-- <div class="yt-item-thumb"><img src="https://www.iconsdb.com/icons/preview/white/bird-2-xxl.png"></div> -->
-        <table class="yt-table">
+<table class="yt-table">
+    <tr class="yt-row">
+        <td class="yt-cell">
+            <div class="plate">
+                <span class="title-style"><a href="/blog/blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes/">Blender 2.69 beginner tutorial - Introduction to sculpting (the brushes)</a></span>
+                <div class="video-creator">created by: <span>Allan Jeremy</span></div>
+                <div class="date-style">| <span>Dec 29 2013</span></div>
+            </div>
+            <div class="tooltip">Hover over me
+                <span class="tooltiptext">Tooltip text</span>
+            </div>
+        </td>
+        <td class="bodyCell1"></td>
+        <td class="yt-cell-thumb blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes">
+            <!-- <div class="scrub-box blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes"> -->
+                <a href="#" data-original="https://youtu.be/ouxnyRHwvyo" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
-            <tr class="yt-row">
-                <td class="yt-cell">
-                    <div class="plate">
-                        <span class="title-style"><a href="/blog/blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes/">Blender 2.69 beginner tutorial - Introduction to sculpting (the brushes)</a></span>
-                        <div class="video-creator">created by: <span>Allan Jeremy</span></div>
-                        <div class="date-style">| <span>Dec 29 2013</span></div>
-                    </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
-                    </div>
-                </td>
-                <td class="yt-cell"></td>
-                <td class="yt-cell-thumb blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes">
-                    <!-- <div class="scrub-box blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes"> -->
-                        <a href="#" data-original="https://youtu.be/ouxnyRHwvyo" data-jumpto="" rel="noopener noreferrer" target="_blank">
+                    <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
+                    <div class="this-is-spartaaa blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes" data-defaultimgnr="1" data-img="/images/post-content/blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes-preview.jpg" data-time="2478.0" data-jumpto=""></div>
+                    <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
+                    <!-- <img class="yt-real-thumb" src="/images/post-content/blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes-thumb.jpg"> -->
+                    <span class="time"></span>
+                </a>
+            <!-- </div> -->
+        </td>
+        <td class="bodyCell3"></td>
+    </tr>
+</table>
 
-                            <!-- videobox sprite-box scrubber -->
-                            <div class="this-is-spartaaa blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes" data-defaultimgnr="1" data-img="/images/post-content/blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes-preview.jpg" data-time="2478.0" data-jumpto=""></div>
-                            <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
-                            <!-- <img class="yt-real-thumb" src="/images/post-content/blender-269-beginner-tutorial-introduction-to-sculpting-the-brushes-thumb.jpg"> -->
-                            <span class="time"></span>
-                        </a>
-                    <!-- </div> -->
-                </td>
 
-                <td class="yt-cell"></td>
-            </tr>
-        </table>
-    </div>
-    <!-- SAM: What was this for? -->
-    
-</div>
+<!-- SAM: What was this for? -->
 
 
 <!--
@@ -564,11 +478,12 @@ Showing buttons to move to the next / previous list of posts (pager buttons).
     
 </ul>
 
+
+
 </div>
-
-
+</main>
 <div class="footer">© 2018 blendertube.com, Inc. or its affiliates</div>
-</div>
+
 <script>
     $( document ).ready(function() {
         var thumbs = new VideoThumbnail();
