@@ -128,31 +128,29 @@ ul li { padding: 1px; }
 
 .logo-blendertube-banner { width: 60px; height: 60px; margin: auto auto; background-size: contain; background-repeat: no-repeat; background-image: url("/images/tv-cropped.png"); }
 
-.navAllVideos { grid-area: allvideos; font-size: 18px; line-height: 1.4; }
+.navAllVideos { grid-area: allvideos; font-size: 16px; }
 
-.navCreators { grid-area: creators; font-size: 18px; line-height: 1.4; }
+.navCreators { grid-area: creators; font-size: 16px; }
 
-.navTimelapsed { grid-area: timelapse; font-size: 16px; line-height: .8; }
+.navTimelapsed { grid-area: timelapse; font-size: 16; }
 
-.navTimelapsed span { white-space: pre-line; }
+.navTutorials { grid-area: tutorial; font-size: 16px; }
 
-.navTutorials { grid-area: tutorial; font-size: 18px; line-height: 1.4; }
+.nav2D { grid-area: twd; font-size: 16px; }
 
-.nav2D { grid-area: twd; font-size: 18px; line-height: 1.4; }
+.nav3D { grid-area: thd; font-size: 16px; }
 
-.nav3D { grid-area: thd; font-size: 18px; line-height: 1.4; }
-
-.navGreasePencil { grid-area: gp; font-size: 16px; line-height: .8; }
+.navGreasePencil { grid-area: gp; font-size: 14px; line-height: .8; }
 
 .navGreasePencil span { white-space: pre-line; }
 
-.navAbout { grid-area: about; font-size: 18px; line-height: 1.4; }
+.navAbout { grid-area: about; font-size: 16px; }
 
-.navSupport { grid-area: support; font-size: 18px; line-height: 1.4; }
+.navSupport { grid-area: support; font-size: 16px; }
 
-.grid { grid-template: [rowspace-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px [rowspace-end] [row1-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px "allvideos . . timelapse timelapse timelapse timelapse timelapse timelapse . . . about" 5px "allvideos . . . . . . . . . . . about" 1px [row1-end] [rowspace-start] "allvideos . . tutorial tutorial tutorial tutorial tutorial tutorial . . . about" 10px [rowspace-end] [row2-start] ". . . tutorial tutorial tutorial tutorial tutorial tutorial . . . ." 1px "creators . . tutorial tutorial tutorial tutorial tutorial tutorial . . . support" 5px "creators . . . . . . . . . . . support" 2px [row2-end] [rowspace-start] "creators . twd twd . thd thd . gp gp gp . support" 10px [rowspace-end] [row3-start] ". . twd twd . thd thd . gp gp gp . ." 6px [row3-end] [row3-start] ". . twd twd . thd thd . gp gp gp . ." 1px [row3-end]/80px auto 15px 10px 1px 10px 10px 1px 15px 1px 15px auto 80px; display: grid; gap: 5px; /* changed */ /* width: 100%; */ width: 800px; justify-content: center; }
+.grid { grid-template: [rowspace-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px [rowspace-end] [row1-start] ". . . timelapse timelapse timelapse timelapse timelapse timelapse . . . ." 5px "allvideos . . timelapse timelapse timelapse timelapse timelapse timelapse . . . about" 5px "allvideos . . . . . . . . . . . about" 1px [row1-end] [rowspace-start] "allvideos . . tutorial tutorial tutorial tutorial tutorial tutorial . . . about" 10px [rowspace-end] [row2-start] ". . . tutorial tutorial tutorial tutorial tutorial tutorial . . . ." 1px "creators . . tutorial tutorial tutorial tutorial tutorial tutorial . . . support" 5px "creators . . . . . . . . . . . support" 2px [row2-end] [rowspace-start] "creators . twd twd . thd thd . gp gp gp . support" 10px [rowspace-end] [row3-start] ". . twd twd . thd thd . gp gp gp . ." 6px [row3-end] [row3-start] ". . twd twd . thd thd . gp gp gp . ." 1px [row3-end]/80px auto 15px 10px 1px 10px 10px 1px 15px 1px 15px auto 80px; display: grid; gap: 2px; /* changed */ /* width: 100%; */ width: 800px; justify-content: center; }
 
-.menu > a { display: block; text-align: center; margin: -5px; padding: 3px 0px 3px 0px; height: 100%; color: rgba(0, 0, 0, 0.8); border-radius: 25px; background-color: rgba(108, 142, 173, 0.8); border: 2px outset #6c8ead; font-family: "Squada One", sans-serif; opacity: .8; text-decoration: none; }
+.menu > a { display: block; text-align: center; width: 100%; color: rgba(0, 0, 0, 0.8); border-radius: 25px; background-color: rgba(108, 142, 173, 0.8); border: 1px outset #6c8ead; font-family: "Squada One", sans-serif; opacity: .8; text-decoration: none; }
 
 .menu > a:hover { color: black; font-family: "Squada One", sans-serif; text-decoration: none; }
 
@@ -190,15 +188,13 @@ li.creator-style > span > a:hover { color: #999; text-decoration: underline; }
 
 .header { position: fixed; top: 0; left: 0; width: 100%; color: #ddd; background: #000000; padding: 0; box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5); z-index: 200; }
 
-.headerDiv { /* all this flex does is vertically align  */ display: flex; color: #fff; height: 162px; align-items: center; position: relative; }
+.headerDiv { /* all this flex does is vertically align  */ display: flex; color: #fff; align-items: center; position: relative; }
 
 .headerCell1 { width: 190px; display: table-cell; }
 
 .headerCell2 { width: 800px; background-color: #ee9131; display: table-cell; /* padding: 8px; */ border-radius: 5px 5px 0px 0px; border-right: 4px inset rgba(162, 62, 72, 0.5); border-top-left-radius: 10px 10px; border-top-right-radius: 10px 10px; border-bottom-left-radius: 3px 3px; border-bottom-right-radius: 3px 3px; box-shadow: 0 0 1px #fff inset; border-radius: 5px 5px 0px 0px; background-color: #ee9131; border-right: 4px inset rgba(162, 62, 72, 0.5); border-top-left-radius: 10px 10px; border-top-right-radius: 10px 10px; border-bottom-left-radius: 3px 3px; border-bottom-right-radius: 3px 3px; box-shadow: 0 0 1px #fff inset; }
 
 .headerCell3 { width: auto; display: table-cell; }
-
-.stepDown { height: 162px; }
 
 main { display: block; }
 
@@ -234,7 +230,6 @@ table { width: 100%; }
 
 .time { pointer-events: none; position: relative; display: block; text-align: center; bottom: 20px; background-color: rgba(192, 192, 192, 0.25); }
 
-/* .this-is-spartaaa { border: 1px solid red; margin: auto; max-width: 100%; max-height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; } .yt-real-thumb { margin: auto; max-width: 100%; max-height: 100%; } */
 .yt-cell-me { border-bottom: 2px ridge #9ac67d; background-color: #8cae68; }
 
 .yt-cell-me div { margin: auto; height: 180px; width: 240px; float: left; }
