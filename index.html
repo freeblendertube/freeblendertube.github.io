@@ -11,7 +11,7 @@ All calls to site.posts should be replaced by paginator.posts
 {% for post in paginator.posts %}
 {% assign creator = post.video_creator | remove: " " | downcase %}
 {% capture thumb_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{post.video_id | append: "-thumb.jpg"}}{% endcapture %}
-{% capture preview_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{post.video_id | append: "-preview.jpg"}}{% endcapture %}
+{% capture timeline_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{post.video_id | append: "-timeline.jpg"}}{% endcapture %}
 
 <!-- use bt and yt encoded -->
 <table class="yt-table">
@@ -32,7 +32,7 @@ All calls to site.posts should be replaced by paginator.posts
                 <a href="#" data-original="{{post.video_url}}" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
                     <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
-                    <div class="this-is-spartaaa {{post.video_id}}" data-defaultimgnr="1" data-img="{{preview_file}}" data-time="{{post.video_length}}" data-jumpto=""></div>
+                    <div class="this-is-spartaaa {{post.video_id}}" data-defaultimgnr="1" data-img="{{timeline_file}}" data-time="{{post.video_length}}" data-jumpto=""></div>
                     <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
                     <!-- <img class="yt-real-thumb" src="{{thumb_file}}"> -->
                     <span class="time"></span>

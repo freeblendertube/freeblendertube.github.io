@@ -13,6 +13,7 @@ language_audio: English
 language_subs: x
 blender_version: 2.78
 tags_software: x
+starttime: 0:04:58
 support: https://www.buymeacoffee.com/jayanam
 ---
 `Pertinent Information:`

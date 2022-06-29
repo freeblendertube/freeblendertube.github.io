@@ -13,4 +13,6 @@ language_audio: English
 language_subs: x
 blender_version: 2.78
 tags_software: x
+starttime: 0:19:54
+pois: 0:14:51, leg-movement 0:19:54
 ---

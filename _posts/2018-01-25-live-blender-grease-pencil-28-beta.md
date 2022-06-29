@@ -9,8 +9,9 @@ video_creator: ToutApprendre
 channel_url: /channel/UCFMQG2aYndcIPHGNfmkTo_w
 video_url: https://youtu.be/jePGiZYyYa0
 video_length: 1:36:01
-language_audio: English
+language_audio: French
 language_subs: x
 blender_version: 2.78
 tags_software: x
+starttime: 1:00:43
 ---

@@ -14,4 +14,5 @@ language_subs: x
 blender_version: 2.78
 tags_software: x
 tags: borncg
+starttime: 0:13:30
 ---

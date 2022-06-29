@@ -12,5 +12,6 @@ video_length: 0:03:15
 language_audio: English
 language_subs: x
 blender_version: 2.78
-tags_software: x
+tags_software: 0:00:29
+starttime: 0:00:33
 ---

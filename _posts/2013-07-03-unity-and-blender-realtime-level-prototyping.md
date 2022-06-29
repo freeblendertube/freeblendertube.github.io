@@ -13,4 +13,6 @@ language_audio: English
 language_subs: x
 blender_version: 2.78
 tags_software: x
+starttime: 0:01:40
+pois: 0:01:40, export-to-unity 0:02:19
 ---

@@ -13,4 +13,6 @@ language_audio: English
 language_subs: x
 blender_version: 2.78
 tags_software: x
+starttime: 0:19:50
+pois: 0:19:50, 0:26:34 deform by lattice
 ---

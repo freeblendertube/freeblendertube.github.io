@@ -4,7 +4,7 @@
 {% assign creator = page.video_creator | remove: " " | downcase %}
 
 {% capture thumb_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{page.video_id | append: "-thumb.jpg"}}{% endcapture %}
-{% capture preview_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{page.video_id | append: "-preview.jpg"}}{% endcapture %}
+{% capture timeline_file %}{{ "/images/post-content/" | prepend: site.baseurl }}{{page.video_id | append: "-timeline.jpg"}}{% endcapture %}
 
 <!-- use bt and yt encoded -->
 <table class="yt-table">
@@ -26,7 +26,7 @@
                 <a href="#" data-original="{{post.video_url}}" data-jumpto="" rel="noopener noreferrer" target="_blank">
 
                     <!-- SAM: rename stylename: videobox sprite-box scrubber scrubox -->
-                    <div class="this-is-spartaaa {{post.video_id}}" data-defaultimgnr="1" data-img="{{preview_file}}" data-time="{{post.video_length}}" data-jumpto=""></div>
+                    <div class="this-is-spartaaa {{post.video_id}}" data-defaultimgnr="1" data-img="{{timeline_file}}" data-time="{{post.video_length}}" data-jumpto=""></div>
                     <!-- SAM: revisit. for when <img class="yt-real-thumb"> are loaded beforehand. lazy / selective loading of sprites -->
                     <!-- <img class="yt-real-thumb" src="{{thumb_file}}"> -->
                     <span class="time"></span>
@@ -42,6 +42,8 @@
 <a href="{{ page.url }}">{{ page.title }}</a>
 {%endif%}
 
+<!-- DISCOURSE COMMENTS -->
+<!--
 <div id='discourse-comments'></div>
 
 <script type="text/javascript">
@@ -55,5 +57,6 @@
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
   })();
 </script>
+-->
 
 {% include footer.html %}

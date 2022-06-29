@@ -13,4 +13,6 @@ language_audio: English
 language_subs: x
 blender_version: 2.78
 tags_software: x
+starttime: 0:02:40
+pois: 0:02:40, 0:04:21
 ---

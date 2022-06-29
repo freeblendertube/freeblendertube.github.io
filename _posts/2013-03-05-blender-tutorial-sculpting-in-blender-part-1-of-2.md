@@ -13,5 +13,6 @@ language_audio: English
 language_subs: x
 blender_version: 2.78
 tags_software: x
-thumb_poi_timestamp: 0:12:32
+starttime: 0:13:13
+thumb_poi_timestamp: 0:01:23, 0:12:32, brush-anchored 0:13:13 , 0:15:55, 0:16:45
 ---
